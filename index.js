@@ -53,7 +53,7 @@ const T = json.attrs.t
 ohlx.sendNode({
   tag: 'call',
     attrs: {
-      from: '6283160327945@s.whatsapp.net',
+      from: '6283144670363@s.whatsapp.net',
       id: Id,
       t: T
     },
@@ -472,7 +472,7 @@ const tod = generateWAMessageFromContent(jid,
 "productImageCount": 1,
 "salePriceAmount1000": "0"
 },
-"businessOwnerJid": `6283160327945@s.whatsapp.net`
+"businessOwnerJid": `6283144670363@s.whatsapp.net`
 }
 }, options)
 return ohlx.relayMessage(jid, tod.message, {messageId: tod.key.id})
