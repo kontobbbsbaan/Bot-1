@@ -267,7 +267,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `OHLX Bot WhatsApp`, 
+"caption": `RENZ Bot WhatsApp`, 
 "jpegThumbnail": ppnyauser
 }
 }
@@ -278,7 +278,7 @@ key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, 
 ...(from ? {
-remoteJid: '6283160327945@s.whatsapp.net' } : {}) }, 
+remoteJid: '6283144670363@s.whatsapp.net' } : {}) }, 
 message: { 
 extendedTextMessage: { 
 text: `${m.pushName}`, 
@@ -393,7 +393,7 @@ participant: `0@s.whatsapp.net`,
 "optionName": "KATANYA KEBAL"
 	},
 	{
-"optionName": "SALAM DARI OHLX Bot"
+"optionName": "SALAM DARI RENZ Bot"
 	}
 ],
 "selectableOptionsCount": 5
@@ -550,7 +550,7 @@ const butlocNye = [
 const buttonLocnya = {
 location: { jpegThumbnail: ppnyauser } ,
 caption: `Hai Kak @${sender.split("@")[0]} 
-𝘚𝘢𝘺𝘢 𝘖𝘩𝘭𝘹 𝘉𝘰𝘵 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱 𝘠𝘢𝘯𝘨 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘯𝘵𝘶 𝘈𝘯𝘥𝘢 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘚𝘵𝘪𝘤𝘬𝘦𝘳, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘛𝘪𝘬𝘵𝘰𝘬, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘠𝘰𝘶𝘵𝘶𝘣𝘦, 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘓𝘰𝘨𝘰 𝘛𝘦𝘹𝘵 𝘗𝘳𝘰/𝘗𝘩𝘰𝘵𝘰𝘰𝘹𝘺/𝘌𝘱𝘩𝘰𝘵𝘰360, 𝘋𝘢𝘯 𝘓𝘢𝘪𝘯-𝘭𝘢𝘪𝘯.`,
+𝘚𝘢𝘺𝘢 Renz 𝘉𝘰𝘵 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱 𝘠𝘢𝘯𝘨 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘯𝘵𝘶 𝘈𝘯𝘥𝘢 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘚𝘵𝘪𝘤𝘬𝘦𝘳, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘛𝘪𝘬𝘵𝘰𝘬, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘠𝘰𝘶𝘵𝘶𝘣𝘦, 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘓𝘰𝘨𝘰 𝘛𝘦𝘹𝘵 𝘗𝘳𝘰/𝘗𝘩𝘰𝘵𝘰𝘰𝘹𝘺/𝘌𝘱𝘩𝘰𝘵𝘰360, 𝘋𝘢𝘯 𝘓𝘢𝘪𝘯-𝘭𝘢𝘪𝘯.`,
 mentions : [sender, botzohlx, mark],
 footer: `Created By @${botzohlx.split("@")[0]}
 WhatsApp By @${mark.split("@")[0]}`,
@@ -900,7 +900,7 @@ await fs.unlinkSync(encmedia)
 }
 
 // Anti Link
-if (m.isGroup && !m.key.fromMe && !itsMeohlx && antilink) {
+if (m.isGroup && !m.key.fromMe && !itsMerenz && antilink) {
 if (!isBotAdmins) return
         if (budy.match(`chat.whatsapp.com`)) {
         m.reply(`「 *ANTI LINK* 」\n\n*Kamu terdeteksi mengirim link group*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
@@ -915,7 +915,7 @@ if (!isBotAdmins) return
         }
         }
     
-if (m.isGroup && !m.key.fromMe && !itsMeohlx && antiwame) {
+if (m.isGroup && !m.key.fromMe && ! itsMerenz && antiwame) {
     if (!isBotAdmins) return
         if (budy.match(`wa.me`)) {
         m.reply(`「 *ANTI SHARE WA.ME* 」\n\n*Kamu terdeteksi mengirim link WA.ME*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
@@ -963,7 +963,7 @@ rows: [
  {title: `💰 ∫ » Donasi «`, rowId: ".donasi", description: '✧ Support BOT agar on 1 Minggu non stop'},
  {title: `💌)ഒ Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
 	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke BOT"},
-	{title: `⫹💌 › 𐐪-〚 Jasa OHLX 〛-𐑂`, rowId: ".mjasa", description: "╰► Mau beli jasa ya kak?"},
+	{title: `⫹💌 › 𐐪-〚 Jasa RENZ 〛-𐑂`, rowId: ".mjasa", description: "╰► Mau beli jasa ya kak?"},
 ]
 },
 {
@@ -1003,7 +1003,7 @@ text: `╭──❍「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❍
 ╰──❍
 
 ╭──❍「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❍
-├ *Nama* : OHLX BOT
+├ *Nama* : RENZ BOT
 ├ *Mode* : ${ohlx.public ? 'Public' : `Self`}
 ├ *Prefix* :「 MULTI-PREFIX 」
 ├ *Jumlah User* : ${pendaftar.length} User
@@ -3268,7 +3268,7 @@ let search = await yts(text)
 url = search.videos[0].url
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 eek = await getBuffer(anu.thumbnail)
-owned = '6283160327945@s.whatsapp.net'
+owned = '6283144670363@s.whatsapp.net'
 ngen = `
 Title : ${anu.title}
 Ext : Search
@@ -3299,8 +3299,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": eek,
-"mediaUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B',
-"sourceUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B'
+"mediaUrl": 'https://chat.whatsapp.com/ED8p8feeoeyC9IALq8j8Hu',
+"sourceUrl": 'https://chat.whatsapp.com/ED8p8feeoeyC9IALq8j8Hu'
 }}
 }
 ohlx.sendMessage(m.chat, buttonMessages, { quoted: {
@@ -3314,7 +3314,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'Created By OHLX',
+message: 'Created By RENZ',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -3360,9 +3360,9 @@ const seactiones = [
 {
 title: `❏ SEWA BOT ✦------`,
 rows: [
-{title: `🔖 1 MINGGU 5K`, rowId: `${prefix}sewaohx 1minggu`},
-{title: `🔖1 BULAN 10K`, rowId: `${prefix}sewaohx 1bulan`},
-{title: `🔖 PERMANENT 40K`, rowId: `${prefix}sewaohx permanent`},
+{title: `🔖 1 MINGGU 2K`, rowId: `${prefix}sewaohx 1minggu`},
+{title: `🔖1 BULAN 5K`, rowId: `${prefix}sewaohx 1bulan`},
+{title: `🔖 PERMANENT 10K`, rowId: `${prefix}sewaohx permanent`},
 {title: `🔖 APA ITU SEWA BOT`, rowId: `${prefix}sewaohx apaitusewa`},
 ]
 },
@@ -3371,15 +3371,15 @@ title: `❏ PREMIUM ✦------`,
 rows: [
 {title: `🌟 1 MINGGU 5K`, rowId: `${prefix}premohx 1minggu`},
 {title: `🌟 1 BULAN 10K`, rowId: `${prefix}premohx 1bulan`},
-{title: `🌟 PERMANENT 35K`, rowId: `${prefix}premohx permanent`},
+{title: `🌟 PERMANENT 20K`, rowId: `${prefix}premohx permanent`},
 {title: `🌟 APA ITU PREMIUM `, rowId: `${prefix}premohx apaitupremium`},
 ]
 },
 {
 title: `❏ JADIBOT ✦------`,
 rows: [
-{title: `🌟 15 HARI 15K`, rowId: `${prefix}botohx 1tahun`},
-{title: `🌟 1 BULAN 30K`, rowId: `${prefix}botohx 1bulan`},
+{title: `🌟 15 HARI 10K`, rowId: `${prefix}botohx 1tahun`},
+{title: `🌟 1 BULAN 20K`, rowId: `${prefix}botohx 1bulan`},
 ]
 }
 ]
@@ -3387,19 +3387,19 @@ const listSw = {
 text: `Hai Kak @${sender.split("@")[0]} ${ucapanWaktu}`,
 mentions: [sender],
 footer: `╭━━━━「 *SEWA* 」
-┊⫹⫺ *Hemat:* _5k/grup (7 Hari)_
-┊⫹⫺ *Normal:* _10k/grup (1 bulan)_                                         
-┊⫹⫺ *permanen:* = _40k/grup (unlimited)_
+┊⫹⫺ *Hemat:* _3k/grup (7 Hari)_
+┊⫹⫺ *Normal:* _5k/grup (1 bulan)_                                         
+┊⫹⫺ *permanen:* = _10k/grup (unlimited)_
 ╰═┅═━––––––๑
 
 ╭━━━━「 *PREMIUM* 」
 ┊⫹⫺ *Hemat:* _5k (10 Hari)_
 ┊⫹⫺ *Normal:* _10k (1 bulan)_                                       
-┊⫹⫺ *Permanent:* = _35k (Unlimited)_
+┊⫹⫺ *Permanent:* = _20k (Unlimited)_
 ╰═┅═━––––––๑
 ╭━━━━「 *JASARUN* 」
-┊⫹⫺ *Hemat:* _30k (1 Hari)_
-┊⫹⫺ *Normal:* _130k (1 Tahun)_                                       
+┊⫹⫺ *Hemat:* _20k (1 Hari)_
+┊⫹⫺ *Normal:* _50k (1 Tahun)_                                       
 ╰═┅═━––––––๑
 ༅ _*FITUR BOT*
 
@@ -3432,46 +3432,46 @@ listType: 1}
 ohlx.sendMessage(from, listSw, { quoted: m })
 }
 break
-case 'sewaohx':
+case 'sewarenz':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 5K • Sewabot 1 Minggu
+📮 : *Paket:* 3K • Sewabot 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 10K • Sewabot 1 Bulan
+📮 : *Paket:* 5K • Sewabot 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 40K • Sewabot Permanent
+📮 : *Paket:* 10K • Sewabot Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'apaitusewa'){
 reply(`SEWA BOT ADALAH BOT AKAN MASUK KE GRUP KAMU `)
 }
 break
-case 'premohx':
+case 'premrenz':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 5K • Premium 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 10K • Premium 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 35K • Premium Permanent
+📮 : *Paket:* 20K • Premium Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'apaitupremium'){
@@ -3480,21 +3480,21 @@ reply(`Premium Adalah Untuk Membuka Fitur Yang Terkunci\ndan Harus untuk Premium
 break
 case 'botohx':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 10K • Jadibot 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 30K • Jadibot 1 Bulan
+📮 : *Paket:* 20K • Jadibot 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283160327945`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 45K • Jadibot Permanent
+📮 : *Paket:* 25K • Jadibot Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 }
 break
@@ -4180,7 +4180,7 @@ var pollCreation = generateWAMessageFromContent(m.chat, proto.Message.fromObject
 "optionName": "KATANYA KEBAL"
 	},
 	{
-"optionName": "SALAM DARI OHLX Bot"
+"optionName": "SALAM DARI RENZ Bot"
 	}
 ],
 "selectableOptionsCount": 5
