@@ -148,7 +148,7 @@ autoreadsw = true
         const numberQuery = q.replace(new RegExp('[()+-/ +/]', 'gi'), '') + '@s.whatsapp.net'
         const usernya = mentionByReply ? mentionByReply : mentionByTag[0]
         const Input = mentionByTag[0] ? mentionByTag[0] : mentionByReply ? mentionByReply : q ? numberQuery : false
-      const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': 'OHLX Dev', 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;OHLX Dev,;;;\nFN:OHLX Dev\nitem1.TEL;waid=6283160327945:6283160327945\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}  
+      const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': 'OHLX Dev', 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;OHLX Dev,;;;\nFN:OHLX Dev\nitem1.TEL;waid=6283843737548:6283843737548\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}  
     	
 try {
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -267,7 +267,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `RENZ Bot WhatsApp`, 
+"caption": `📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑`, 
 "jpegThumbnail": ppnyauser
 }
 }
@@ -393,7 +393,7 @@ participant: `0@s.whatsapp.net`,
 "optionName": "KATANYA KEBAL"
 	},
 	{
-"optionName": "SALAM DARI RENZ Bot"
+"optionName": "BOT BY KIAN"
 	}
 ],
 "selectableOptionsCount": 5
@@ -413,7 +413,7 @@ const repPy = {
 			requestFrom: '0@s.whatsapp.net',
 			noteMessage: {
 				extendedTextMessage: {
-					text: 'Creator OHLX'
+					text: '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑'
 				}
 			},
 			expiryTimestamp: 999999999,
@@ -457,7 +457,7 @@ participant: `0@s.whatsapp.net`,
 "surface": "CATALOG",
 "message": `OHLX Bot WhatsApp${ngazap(prefix)}`,
 "orderTitle": "OHLX Bot WhatsApp${ngazap(prefix)}",
-"sellerJid": "6283160327945@s.whatsapp.net",
+"sellerJid": "6283843737548@s.whatsapp.net",
 "token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
 "totalAmount1000": "500000000000000",
 "totalCurrencyCode": "IDR"
@@ -539,7 +539,7 @@ templateButtons: [
 ]})
 }
 
-const botzohlx = "6283160327945@s.whatsapp.net"
+const botzohlx = "6283843737548@s.whatsapp.net"
 const mark = "0@s.whatsapp.net"
 const timestamp = speed()
 const latensi = speed() - timestamp
@@ -882,7 +882,7 @@ let buttons = [
 ]
 await ohlx.sendButtonText(m.chat, buttons, `Auto Download Tiktok
 
-Title : ${atdl.title}`, `Auto Downloader By OHLX`, ftext)
+Title : ${atdl.title}`, `Auto Downloader`, ftext)
 }
 }
 
@@ -1046,1388 +1046,7 @@ let result = args[0].split('https://chat.whatsapp.com/')[1]
 await ohlx.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 }
 break
-            case 'mallmenu': {
-sarch = `┌──⭓ *ALL Menu*
-│
-│⭔🅞 = Khusus Owner
-│⭔🅖 = Khusus Group
-│⭔🅕 = Free User
-│⭔🅟 = Premium
-
-   Owner Menu
-│⭔ ${prefix}self 🅞
-│⭔ ${prefix}public 🅞
-│⭔ ${prefix}bc 🅞
-│⭔ ${prefix}join 🅞
-│⭔ ${prefix}shutdown 🅞
-│⭔ ${prefix}autodltt 🅞
-│⭔ ${prefix}autosticker 🅞
-│⭔ ${prefix}setppbot 🅞
-│⭔ ${prefix}addprem 🅞
-│⭔ ${prefix}delprem 🅞
-│⭔ ${prefix}addowner 🅞
-│⭔ ${prefix}delowner 🅞
-│⭔ ${prefix}addlist 🅞
-│⭔ ${prefix}dellist 🅞
-│⭔ ${prefix}updatelist 🅞
-│⭔ ${prefix}listnya 🅞
-│⭔ ${prefix}addvn 🅞
-│⭔ ${prefix}delvn 🅞
-│⭔ ${prefix}listvn 🅞
-│⭔ ${prefix}ban add 🅞
-│⭔ ${prefix}ban del 🅞
-
-   Other Menu
-│⭔ ${prefix}owner 🅕
-│⭔ ${prefix}jadibot 🅟
-│⭔ ${prefix}listjadibot 🅟
-│⭔ ${prefix}donasi 🅕
-│⭔ ${prefix}listpremium 🅕
-│⭔ ${prefix}buypremium 🅕
-│⭔ ${prefix}jadiowner 🅕
-│⭔ ${prefix}sewabot 🅕
-│⭔ ${prefix}cekme 🅕
-│⭔ ${prefix}obfus 🅕
-│⭔ ${prefix}styletext 🅕
-│⭔ ${prefix}gttees 🅕
-│⭔ ${prefix}tourl 🅕
-│⭔ ${prefix}tovn 🅕
-│⭔ ${prefix}toaudio 🅕
-│⭔ ${prefix}tomp3 🅕
-│⭔ ${prefix}toimg 🅕
-│⭔ ${prefix}toonce 🅕
-│⭔ ${prefix}sticker 🅕
-│⭔ ${prefix}smeme 🅕
-│⭔ ${prefix}snobg 🅕
-│⭔ ${prefix}menfes 🅕
-│⭔ ${prefix}leave 🅕
-│⭔ ${prefix}ebinary 🅕
-│⭔ ${prefix}dbinary 🅕
-│⭔ ${prefix}cariresep 🅕
-│⭔ ${prefix}bacaresep 🅕
-│⭔ ${prefix}ssweb 🅕
-│⭔ ${prefix}wasted 🅕
-│⭔ ${prefix}comrade 🅕
-│⭔ ${prefix}horny 🅕
-│⭔ ${prefix}blur 🅕
-│⭔ ${prefix}pixelate 🅕
-│⭔ ${prefix}simpcard 🅕
-│⭔ ${prefix}lolice 🅕
-│⭔ ${prefix}gay 🅕
-│⭔ ${prefix}jail 🅕
-│⭔ ${prefix}quoted 🅕
-│⭔ ${prefix}caridoi 🅟
-│⭔ ${prefix}cariteman 🅟
-
-   Download Menu
-│⭔ ${prefix}tiktokvideo 🅕
-│⭔ ${prefix}tiktokaudio 🅕
-│⭔ ${prefix}ytsearch 🅕
-│⭔ ${prefix}play 🅕
-│⭔ ${prefix}mp3 🅕
-│⭔ ${prefix}mp4 🅕
-│⭔ ${prefix}googles 🅕
-│⭔ ${prefix}happymod 🅕
-
-   Bug Menu
-│⭔ ${prefix}send 🅞
-│⭔ ${prefix}spambugvip 🅞
-│⭔ ${prefix}santetpc 🅞
-│⭔ ${prefix}santetgc 🅞
-│⭔ ${prefix}sendbug 🅞
-│⭔ ${prefix}senddoc 🅞
-│⭔ ${prefix}sendloc 🅞
-│⭔ ${prefix}ohxstick 🅞
-│⭔ ${prefix}ohxteks 🅞
-│⭔ ${prefix}ohxitem 🅞
-│⭔ ${prefix}ohxlog 🅞
-│⭔ ${prefix}ohxkontak 🅞
-│⭔ ${prefix}ohxloc 🅞
-│⭔ ${prefix}ohxdoc 🅞
-│⭔ ${prefix}ohxvn 🅞
-│⭔ ${prefix}vote 🅞
-│⭔ ${prefix}stickgas 🅞
-│⭔ ${prefix}itemgas 🅞
-│⭔ ${prefix}cataloggas 🅞
-│⭔ ${prefix}docgas 🅞
-│⭔ ${prefix}kongas 🅞
-│⭔ ${prefix}vngas 🅞
-│⭔ ${prefix}teksgas 🅞
-│⭔ ${prefix}locgas 🅞
-│⭔ ${prefix}crash 🅞
-│⭔ ${prefix}jagoan 🅞
-│⭔ ${prefix}jagoanneon 🅞
-
-   Group Menu
-│⭔ ${prefix}antilink 🅖
-│⭔ ${prefix}antiwame 🅖
-│⭔ ${prefix}add 🅖
-│⭔ ${prefix}kick 🅖
-│⭔ ${prefix}promote 🅖
-│⭔ ${prefix}demote 🅖
-│⭔ ${prefix}hidetag 🅖
-│⭔ ${prefix}tagall 🅖
-│⭔ ${prefix}opentime 🅖
-│⭔ ${prefix}closetime 🅖
-
-   Fun Group
-│⭔ ${prefix}memek 🅖
-│⭔ ${prefix}bego 🅖
-│⭔ ${prefix}goblok 🅖
-│⭔ ${prefix}janda 🅖
-│⭔ ${prefix}perawan 🅖
-│⭔ ${prefix}babi 🅖
-│⭔ ${prefix}tolol 🅖
-│⭔ ${prefix}pinter 🅖
-│⭔ ${prefix}pintar 🅖
-│⭔ ${prefix}asu 🅖
-│⭔ ${prefix}bodoh 🅖
-│⭔ ${prefix}gay 🅖
-│⭔ ${prefix}lesby 🅖
-│⭔ ${prefix}bajingan 🅖
-│⭔ ${prefix}jancok 🅖
-│⭔ ${prefix}anjing 🅖
-│⭔ ${prefix}ngentod 🅖
-│⭔ ${prefix}ngentot 🅖
-│⭔ ${prefix}monyet 🅖
-│⭔ ${prefix}mastah 🅖
-│⭔ ${prefix}newbie 🅖
-│⭔ ${prefix}bangsat 🅖
-│⭔ ${prefix}bangke 🅖
-│⭔ ${prefix}sange 🅖
-│⭔ ${prefix}sangean 🅖
-│⭔ ${prefix}dakjal 🅖
-│⭔ ${prefix}horny 🅖
-│⭔ ${prefix}wibu 🅖
-│⭔ ${prefix}puki 🅖
-│⭔ ${prefix}peak 🅖
-│⭔ ${prefix}pantex 🅖
-│⭔ ${prefix}pantek 🅖
-│⭔ ${prefix}setan 🅖
-│⭔ ${prefix}iblis 🅖
-│⭔ ${prefix}cacat 🅖
-│⭔ ${prefix}yatim 🅖
-│⭔ ${prefix}piatu 🅖
-│⭔ ${prefix}goblokcek 🅖
-│⭔ ${prefix}jelekcek 🅖
-│⭔ ${prefix}gaycek 🅖
-│⭔ ${prefix}rate 🅖
-│⭔ ${prefix}lesbicek 🅖
-│⭔ ${prefix}gantengcek 🅖
-│⭔ ${prefix}cantikcek 🅖
-│⭔ ${prefix}begocek 🅖
-│⭔ ${prefix}suhucek 🅖
-│⭔ ${prefix}pintercek 🅖
-│⭔ ${prefix}jagocek 🅖
-│⭔ ${prefix}nolepcek 🅖
-│⭔ ${prefix}babicek 🅖
-│⭔ ${prefix}bebancek 🅖
-│⭔ ${prefix}baikcek 🅖
-│⭔ ${prefix}jahatcek 🅖
-│⭔ ${prefix}anjingcek 🅖
-│⭔ ${prefix}haramcek 🅖
-│⭔ ${prefix}pakboycek 🅖
-│⭔ ${prefix}pakgirlcek 🅖
-│⭔ ${prefix}sangecek 🅖
-│⭔ ${prefix}bapercek 🅖
-│⭔ ${prefix}fakboycek 🅖
-│⭔ ${prefix}alimcek 🅖
-│⭔ ${prefix}suhucek 🅖
-│⭔ ${prefix}fakgirlcek 🅖
-│⭔ ${prefix}kerencek 🅖
-│⭔ ${prefix}wibucek 🅖
-│⭔ ${prefix}pasarkascek 🅖
-│⭔ ${prefix}kulcek 🅖                
-│⭔ ${prefix}cekgoblok 🅖
-│⭔ ${prefix}cekjelek 🅖
-│⭔ ${prefix}cekgay 🅖                
-│⭔ ${prefix}ceklesbi 🅖
-│⭔ ${prefix}cekganteng 🅖
-│⭔ ${prefix}cekcantik 🅖
-│⭔ ${prefix}cekbego 🅖
-│⭔ ${prefix}ceksuhu 🅖
-│⭔ ${prefix}cekpinter 🅖
-│⭔ ${prefix}cekjago 🅖
-│⭔ ${prefix}ceknolep 🅖
-│⭔ ${prefix}cekbabi 🅖
-│⭔ ${prefix}cekbeban 🅖
-│⭔ ${prefix}cekbaik 🅖
-│⭔ ${prefix}cekjahat 🅖
-│⭔ ${prefix}cekanjing 🅖
-│⭔ ${prefix}cekharam 🅖
-│⭔ ${prefix}cekpakboy 🅖
-│⭔ ${prefix}cekpakgirl 🅖
-│⭔ ${prefix}ceksange 🅖
-│⭔ ${prefix}cekbaper 🅖
-│⭔ ${prefix}cekfakboy 🅖
-│⭔ ${prefix}cekalim 🅖
-│⭔ ${prefix}ceksuhu 🅖
-│⭔ ${prefix}cekfakgirl 🅖
-│⭔ ${prefix}cekkeren 🅖
-│⭔ ${prefix}cekwibu 🅖
-│⭔ ${prefix}cekpasarkas 🅖
-│⭔ ${prefix}cekkul 🅖
-│⭔ ${prefix}cekbapak 🅖
-
-   Random Foto
-│⭔ ${prefix}aesthetic 🅟
-│⭔ ${prefix}ahegao 🅟
-│⭔ ${prefix}akira 🅟
-│⭔ ${prefix}akiyama 🅟
-│⭔ ${prefix}ana 🅟
-│⭔ ${prefix}anjing 🅟
-│⭔ ${prefix}art 🅟
-│⭔ ${prefix}ass 🅟
-│⭔ ${prefix}asuna 🅟
-│⭔ ${prefix}ayuzawa 🅟
-│⭔ ${prefix}bdsm 🅟
-│⭔ ${prefix}boneka 🅟
-│⭔ ${prefix}boruto 🅟
-│⭔ ${prefix}bts 🅟
-│⭔ ${prefix}cecan 🅟
-│⭔ ${prefix}chiho 🅟
-│⭔ ${prefix}chitoge 🅟
-│⭔ ${prefix}cogan 🅟
-│⭔ ${prefix}cosplay 🅟
-│⭔ ${prefix}cosplayloli 🅟
-│⭔ ${prefix}cosplaysagiri 🅟
-│⭔ ${prefix}cuckold 🅟
-│⭔ ${prefix}cum 🅟
-│⭔ ${prefix}cyber 🅟
-│⭔ ${prefix}darkjokes 🅟
-│⭔ ${prefix}deidara 🅟
-│⭔ ${prefix}doraemon 🅟
-│⭔ ${prefix}eba 🅟
-│⭔ ${prefix}elaina 🅟
-│⭔ ${prefix}emilia 🅟
-│⭔ ${prefix}ero 🅟
-│⭔ ${prefix}erza 🅟
-│⭔ ${prefix}exo 🅟
-│⭔ ${prefix}femdom 🅟
-│⭔ ${prefix}foot 🅟
-│⭔ ${prefix}freefire 🅟
-│⭔ ${prefix}gamewallpaper 🅟
-│⭔ ${prefix}gangbang 🅟
-│⭔ ${prefix}gifs 🅟
-│⭔ ${prefix}glasses 🅟
-│⭔ ${prefix}gremory 🅟
-│⭔ ${prefix}hekel 🅟
-│⭔ ${prefix}hentai 🅟
-│⭔ ${prefix}hestia 🅟
-│⭔ ${prefix}hijaber 🅟
-│⭔ ${prefix}hinata 🅟
-│⭔ ${prefix}husbu 🅟
-│⭔ ${prefix}inori 🅟
-│⭔ ${prefix}islamic 🅟
-│⭔ ${prefix}isuzu 🅟
-│⭔ ${prefix}itachi 🅟
-│⭔ ${prefix}itori 🅟
-│⭔ ${prefix}jahy 🅟
-│⭔ ${prefix}jeni 🅟
-│⭔ ${prefix}jiso 🅟
-│⭔ ${prefix}justina 🅟
-│⭔ ${prefix}kaga 🅟
-│⭔ ${prefix}kagura 🅟
-│⭔ ${prefix}kakasih 🅟
-│⭔ ${prefix}kaori 🅟
-│⭔ ${prefix}kartun 🅟
-│⭔ ${prefix}katakata 🅟
-│⭔ ${prefix}keneki 🅟
-│⭔ ${prefix}kotori 🅟
-│⭔ ${prefix}kpop 🅟
-│⭔ ${prefix}kucing 🅟
-│⭔ ${prefix}kurumi 🅟
-│⭔ ${prefix}lisa 🅟
-│⭔ ${prefix}loli 🅟
-│⭔ ${prefix}madara 🅟
-│⭔ ${prefix}masturbation 🅟
-│⭔ ${prefix}megumin 🅟
-│⭔ ${prefix}mikasa 🅟
-│⭔ ${prefix}mikey 🅟
-│⭔ ${prefix}miku 🅟
-│⭔ ${prefix}milf 🅟
-│⭔ ${prefix}minato 🅟
-│⭔ ${prefix}mobil 🅟
-│⭔ ${prefix}motor 🅟
-│⭔ ${prefix}mountain 🅟
-│⭔ ${prefix}naruto 🅟
-│⭔ ${prefix}neko 🅟
-│⭔ ${prefix}neko2 🅟
-│⭔ ${prefix}nekonime 🅟
-│⭔ ${prefix}nezuko 🅟
-│⭔ ${prefix}onepiece 🅟
-│⭔ ${prefix}orgy 🅟
-│⭔ ${prefix}panties 🅟
-│⭔ ${prefix}pentol 🅟
-│⭔ ${prefix}pokemon 🅟
-│⭔ ${prefix}profil 🅟
-│⭔ ${prefix}programming 🅟
-│⭔ ${prefix}pubg 🅟
-│⭔ ${prefix}pussy 🅟
-│⭔ ${prefix}randblackpink 🅟
-│⭔ ${prefix}randomnime 🅟
-│⭔ ${prefix}randomnime2 🅟
-│⭔ ${prefix}rize 🅟
-│⭔ ${prefix}rose 🅟
-│⭔ ${prefix}ryujin 🅟
-│⭔ ${prefix}sagiri 🅟
-│⭔ ${prefix}sakura 🅟
-│⭔ ${prefix}sasuke 🅟
-│⭔ ${prefix}satanic 🅟
-│⭔ ${prefix}shina 🅟
-│⭔ ${prefix}shinka 🅟
-│⭔ ${prefix}shinomiya 🅟
-│⭔ ${prefix}shizuka 🅟
-│⭔ ${prefix}shota 🅟
-│⭔ ${prefix}tatasurya 🅟
-│⭔ ${prefix}technology 🅟
-│⭔ ${prefix}tejina 🅟
-│⭔ ${prefix}tentacles 🅟
-│⭔ ${prefix}thighs 🅟
-│⭔ ${prefix}toukachan 🅟
-│⭔ ${prefix}tsunade 🅟
-│⭔ ${prefix}waifu 🅟
-│⭔ ${prefix}wallhp 🅟
-│⭔ ${prefix}wallml 🅟
-│⭔ ${prefix}wallnime 🅟
-│⭔ ${prefix}yotsuba 🅟
-│⭔ ${prefix}yuki 🅟
-│⭔ ${prefix}yulibocil 🅟
-│⭔ ${prefix}yumeko 🅟
-│⭔ ${prefix}fox 🅟  
-│⭔ ${prefix}dog 🅟  
-│⭔ ${prefix}cat 🅟
-│⭔ ${prefix}panda 🅟  
-│⭔ ${prefix}birb 🅟 
-│⭔ ${prefix}koala 🅟
-
-   Text Pro
-│⭔ ${prefix}candy 🅟 
-│⭔ ${prefix}christmas 🅟 
-│⭔ ${prefix}3dchristmas 🅟 
-│⭔ ${prefix}sparklechristmas 🅟
-│⭔ ${prefix}deepsea 🅟 
-│⭔ ${prefix}scifi 🅟 
-│⭔ ${prefix}rainbow 🅟 
-│⭔ ${prefix}waterpipe 🅟 
-│⭔ ${prefix}spooky 🅟 
-│⭔ ${prefix}pencil 🅟 
-│⭔ ${prefix}circuit 🅟 
-│⭔ ${prefix}discovery 🅟 
-│⭔ ${prefix}metalic 🅟 
-│⭔ ${prefix}fiction 🅟 
-│⭔ ${prefix}demon 🅟 
-│⭔ ${prefix}transformer 🅟 
-│⭔ ${prefix}berry 🅟 
-│⭔ ${prefix}thunder 🅟 
-│⭔ ${prefix}magma 🅟 
-│⭔ ${prefix}3dstone 🅟 
-│⭔ ${prefix}neonlight 🅟 
-│⭔ ${prefix}glitch 🅟 
-│⭔ ${prefix}harrypotter 🅟 
-│⭔ ${prefix}brokenglass 🅟 
-│⭔ ${prefix}papercut 🅟 
-│⭔ ${prefix}watercolor 🅟 
-│⭔ ${prefix}multicolor 🅟 
-│⭔ ${prefix}neondevil 🅟 
-│⭔ ${prefix}underwater 🅟 
-│⭔ ${prefix}graffitibike 🅟
-│⭔ ${prefix}snow 🅟 
-│⭔ ${prefix}cloud 🅟 
-│⭔ ${prefix}honey 🅟 
-│⭔ ${prefix}ice 🅟 
-│⭔ ${prefix}fruitjuice 🅟 
-│⭔ ${prefix}biscuit 🅟 
-│⭔ ${prefix}wood 🅟 
-│⭔ ${prefix}chocolate 🅟 
-│⭔ ${prefix}strawberry 🅟 
-│⭔ ${prefix}matrix 🅟 
-│⭔ ${prefix}blood 🅟 
-│⭔ ${prefix}dropwater 🅟 
-│⭔ ${prefix}toxic 🅟 
-│⭔ ${prefix}lava 🅟 
-│⭔ ${prefix}rock 🅟 
-│⭔ ${prefix}bloodglas 🅟 
-│⭔ ${prefix}hallowen 🅟 
-│⭔ ${prefix}darkgold 🅟 
-│⭔ ${prefix}joker 🅟 
-│⭔ ${prefix}wicker 🅟
-│⭔ ${prefix}firework 🅟 
-│⭔ ${prefix}skeleton 🅟 
-│⭔ ${prefix}blackpink 🅟 
-│⭔ ${prefix}sand 🅟 
-│⭔ ${prefix}glue 🅟 
-│⭔ ${prefix}1917 🅟 
-│⭔ ${prefix}leaves 🅟
-
-   Photo Oxy
-│⭔ ${prefix}shadow 🅟 
-│⭔ ${prefix}write 🅟 
-│⭔ ${prefix}romantic 🅟 
-│⭔ ${prefix}burnpaper 🅟
-│⭔ ${prefix}smoke 🅟 
-│⭔ ${prefix}narutobanner 🅟 
-│⭔ ${prefix}love 🅟 
-│⭔ ${prefix}undergrass 🅟
-│⭔ ${prefix}doublelove 🅟 
-│⭔ ${prefix}coffecup 🅟
-│⭔ ${prefix}underwaterocean 🅟
-│⭔ ${prefix}smokyneon 🅟
-│⭔ ${prefix}starstext 🅟
-│⭔ ${prefix}rainboweffect 🅟
-│⭔ ${prefix}balloontext 🅟
-│⭔ ${prefix}metalliceffect 🅟
-│⭔ ${prefix}embroiderytext 🅟
-│⭔ ${prefix}flamingtext 🅟
-│⭔ ${prefix}stonetext 🅟
-│⭔ ${prefix}writeart 🅟
-│⭔ ${prefix}summertext 🅟
-│⭔ ${prefix}wolfmetaltext 🅟
-│⭔ ${prefix}nature3dtext 🅟
-│⭔ ${prefix}rosestext 🅟
-│⭔ ${prefix}naturetypography 🅟
-│⭔ ${prefix}quotesunder 🅟
-│⭔ ${prefix}shinetext 🅟
-
-   Ephoto 360
-│⭔ ${prefix}glitchtext 🅟
-│⭔ ${prefix}writetext 🅟
-│⭔ ${prefix}advancedglow 🅟
-│⭔ ${prefix}typographytext 🅟
-│⭔ ${prefix}pixelglitch 🅟
-│⭔ ${prefix}neonglitch 🅟
-│⭔ ${prefix}flagtext 🅟
-│⭔ ${prefix}flag3dtext 🅟
-│⭔ ${prefix}deletingtext 🅟
-│⭔ ${prefix}blackpinkstyle 🅟
-│⭔ ${prefix}glowingtext 🅟
-│⭔ ${prefix}underwatertext 🅟
-│⭔ ${prefix}logomaker 🅟
-│⭔ ${prefix}cartoonstyle 🅟
-│⭔ ${prefix}papercutstyle 🅟
-│⭔ ${prefix}watercolortext 🅟
-│⭔ ${prefix}effectclouds 🅟
-│⭔ ${prefix}blackpinklogo 🅟
-│⭔ ${prefix}gradienttext 🅟
-│⭔ ${prefix}summerbeach 🅟
-│⭔ ${prefix}luxurygold 🅟
-│⭔ ${prefix}multicoloredneon 🅟
-│⭔ ${prefix}sandsummer 🅟
-│⭔ ${prefix}galaxywallpaper 🅟
-│⭔ ${prefix}1917style 🅟
-│⭔ ${prefix}makingneon 🅟
-│⭔ ${prefix}royaltext 🅟
-│⭔ ${prefix}freecreate 🅟
-│⭔ ${prefix}galaxystyle 🅟
-│⭔ ${prefix}lighteffects 🅟
-
-   Random Cerpen
-│⭔ ${prefix}cerpen_sejarah 🅟
-│⭔ ${prefix}cerpen_sedih 🅟
-│⭔ ${prefix}cerpen_sastra 🅟
-│⭔ ${prefix}cerpen_romantis 🅟
-│⭔ ${prefix}cerpen_rohani 🅟
-│⭔ ${prefix}cerpen_rindu 🅟
-│⭔ ${prefix}cerpen_remaja 🅟
-│⭔ ${prefix}cerpen_ramadhan 🅟
-│⭔ ${prefix}cerpen_petualangan 🅟
-│⭔ ${prefix}cerpen_persahabatan 🅟
-│⭔ ${prefix}cerpen_perpisahan 🅟
-│⭔ ${prefix}cerpen_perjuangan 🅟
-│⭔ ${prefix}cerpen_penyesalan 🅟
-│⭔ ${prefix}cerpen_pengorbanan 🅟
-│⭔ ${prefix}cerpen_pengalaman 🅟
-│⭔ ${prefix}cerpen_pendidikan 🅟
-│⭔ ${prefix}cerpen_penantian 🅟
-│⭔ ${prefix}cerpen_patahhati 🅟
-│⭔ ${prefix}cerpen_olahraga 🅟
-│⭔ ${prefix}cerpen_nasionalisme 🅟
-│⭔ ${prefix}cerpen_nasihat 🅟
-│⭔ ${prefix}cerpen_motivasi 🅟
-│⭔ ${prefix}cerpen_misteri 🅟
-│⭔ ${prefix}cerpen_mengharukan 🅟
-│⭔ ${prefix}cerpen_malaysia 🅟
-│⭔ ${prefix}cerpen_liburan 🅟
-│⭔ ${prefix}cerpen_kristen 🅟
-│⭔ ${prefix}cerpen_korea 🅟
-│⭔ ${prefix}cerpen_kisahnyata 🅟
-│⭔ ${prefix}cerpen_keluarga 🅟
-│⭔ ${prefix}cerpen_kehidupan 🅟
-│⭔ ${prefix}cerpen_jepang 🅟
-│⭔ ${prefix}cerpen_inspiratif 🅟
-│⭔ ${prefix}cerpen_gokil 🅟
-│⭔ ${prefix}cerpen_galau 🅟
-│⭔ ${prefix}cerpen_cintasejati 🅟
-│⭔ ${prefix}cerpen_cintasegitiga 🅟
-│⭔ ${prefix}cerpen_cintasedih 🅟
-│⭔ ${prefix}cerpen_cintaromantis 🅟
-│⭔ ${prefix}cerpen_cintapertama 🅟
-│⭔ ${prefix}cerpen_cintaislami 🅟
-│⭔ ${prefix}cerpen_cinta 🅟
-│⭔ ${prefix}cerpen_budaya 🅟
-│⭔ ${prefix}cerpen_bahasasunda 🅟
-│⭔ ${prefix}cerpen_bahasajawa 🅟
-│⭔ ${prefix}cerpen_bahasainggris 🅟
-│⭔ ${prefix}cerpen_bahasadaerah 🅟
-│⭔ ${prefix}cerpen_anak 🅟
-
-   Random Video
-│⭔ ${prefix}asupan 🅟
-│⭔ ${prefix}bocil 🅟
-│⭔ ${prefix}rikagusriani 🅟
-│⭔ ${prefix}hentavid 🅟
-│⭔ ${prefix}jjmeryani 🅟
-
-   Stalker Menu
-│⭔ ${prefix}igstalk 🅟
-│⭔ ${prefix}ffstalk 🅟
-│⭔ ${prefix}mlstalk 🅟
-│⭔ ${prefix}npmstalk 🅟
-│⭔ ${prefix}ghstalk 🅟
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-} 
-break
-            case 'mvideo': {
-sarch = `┌──⭓ *Asupan Menu*
-│
-│⭔${prefix}asupan
-│⭔${prefix}bocil 
-│⭔${prefix}rikagusriani 
-│⭔${prefix}hentavid 
-│⭔${prefix}jjmeryani
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-} 
-break
-            case 'maudio': {
-sarch = `┌──⭓ *Sound Menu*
-│
-│⭔ ${prefix}sound1
-│⭔ ${prefix}sound2
-│⭔ ${prefix}sound3
-│⭔ ${prefix}sound4
-│⭔ ${prefix}sound5
-│⭔ ${prefix}sound6
-│⭔ ${prefix}sound7
-│⭔ ${prefix}sound8
-│⭔ ${prefix}sound9
-│⭔ ${prefix}sound10
-│⭔ ${prefix}sound11
-│⭔ ${prefix}sound12
-│⭔ ${prefix}sound13
-│⭔ ${prefix}sound14
-│⭔ ${prefix}sound15
-│⭔ ${prefix}sound16
-│⭔ ${prefix}sound17
-│⭔ ${prefix}sound18
-│⭔ ${prefix}sound19
-│⭔ ${prefix}sound20
-│⭔ ${prefix}sound21
-│⭔ ${prefix}sound22
-│⭔ ${prefix}sound23
-│⭔ ${prefix}sound24
-│⭔ ${prefix}sound25
-│⭔ ${prefix}sound26
-│⭔ ${prefix}sound27
-│⭔ ${prefix}sound28
-│⭔ ${prefix}sound29
-│⭔ ${prefix}sound30
-│⭔ ${prefix}sound31
-│⭔ ${prefix}sound32
-│⭔ ${prefix}sound33
-│⭔ ${prefix}sound34
-│⭔ ${prefix}sound35
-│⭔ ${prefix}sound36
-│⭔ ${prefix}sound37
-│⭔ ${prefix}sound38
-│⭔ ${prefix}sound39
-│⭔ ${prefix}sound40
-│⭔ ${prefix}sound41
-│⭔ ${prefix}sound42
-│⭔ ${prefix}sound43
-│⭔ ${prefix}sound44
-│⭔ ${prefix}sound45
-│⭔ ${prefix}sound46
-│⭔ ${prefix}sound47
-│⭔ ${prefix}sound48
-│⭔ ${prefix}sound49
-│⭔ ${prefix}sound50
-│⭔ ${prefix}sound51
-│⭔ ${prefix}sound52
-│⭔ ${prefix}sound53
-│⭔ ${prefix}sound54
-│⭔ ${prefix}sound55
-│⭔ ${prefix}sound56
-│⭔ ${prefix}sound57
-│⭔ ${prefix}sound58
-│⭔ ${prefix}sound59
-│⭔ ${prefix}sound60
-│⭔ ${prefix}sound61
-│⭔ ${prefix}sound62
-│⭔ ${prefix}sound63
-│⭔ ${prefix}sound64
-│⭔ ${prefix}sound65
-│⭔ ${prefix}sound66
-│⭔ ${prefix}sound67
-│⭔ ${prefix}sound68
-│⭔ ${prefix}sound69
-│⭔ ${prefix}sound70
-│⭔ ${prefix}sound71
-│⭔ ${prefix}sound72
-│⭔ ${prefix}sound73
-│⭔ ${prefix}sound74
-│⭔ ${prefix}sound75
-│⭔ ${prefix}sound76
-│⭔ ${prefix}sound77
-│⭔ ${prefix}sound78
-│⭔ ${prefix}sound79
-│⭔ ${prefix}sound80
-│⭔ ${prefix}sound81
-│⭔ ${prefix}sound82
-│⭔ ${prefix}sound83
-│⭔ ${prefix}sound84
-│⭔ ${prefix}sound85
-│⭔ ${prefix}sound86
-│⭔ ${prefix}sound87
-│⭔ ${prefix}sound88
-│⭔ ${prefix}sound89
-│⭔ ${prefix}sound90
-│⭔ ${prefix}sound91
-│⭔ ${prefix}sound92
-│⭔ ${prefix}sound93
-│⭔ ${prefix}sound94
-│⭔ ${prefix}sound95
-│⭔ ${prefix}sound96
-│⭔ ${prefix}sound97
-│⭔ ${prefix}sound98
-│⭔ ${prefix}sound99
-│⭔ ${prefix}sound100
-│⭔ ${prefix}sound101
-│⭔ ${prefix}sound102
-│⭔ ${prefix}sound103
-│⭔ ${prefix}sound104
-│⭔ ${prefix}sound105
-│⭔ ${prefix}sound106
-│⭔ ${prefix}sound107
-│⭔ ${prefix}sound108
-│⭔ ${prefix}sound109
-│⭔ ${prefix}sound110
-│⭔ ${prefix}sound111
-│⭔ ${prefix}sound112
-│⭔ ${prefix}sound113
-│⭔ ${prefix}sound114
-│⭔ ${prefix}sound115
-│⭔ ${prefix}sound116
-│⭔ ${prefix}sound117
-│⭔ ${prefix}sound118
-│⭔ ${prefix}sound119
-│⭔ ${prefix}sound120
-│⭔ ${prefix}sound121
-│⭔ ${prefix}sound122
-│⭔ ${prefix}sound123
-│⭔ ${prefix}sound124
-│⭔ ${prefix}sound125
-│⭔ ${prefix}sound126
-│⭔ ${prefix}sound127
-│⭔ ${prefix}sound128
-│⭔ ${prefix}sound129
-│⭔ ${prefix}sound130
-│⭔ ${prefix}sound131
-│⭔ ${prefix}sound132
-│⭔ ${prefix}sound133
-│⭔ ${prefix}sound134
-│⭔ ${prefix}sound135
-│⭔ ${prefix}sound136
-│⭔ ${prefix}sound137
-│⭔ ${prefix}sound138
-│⭔ ${prefix}sound139
-│⭔ ${prefix}sound140
-│⭔ ${prefix}sound141
-│⭔ ${prefix}sound142
-│⭔ ${prefix}sound143
-│⭔ ${prefix}sound144
-│⭔ ${prefix}sound145
-│⭔ ${prefix}sound146
-│⭔ ${prefix}sound147
-│⭔ ${prefix}sound148
-│⭔ ${prefix}sound149
-│⭔ ${prefix}sound150
-│⭔ ${prefix}sound151
-│⭔ ${prefix}sound152
-│⭔ ${prefix}sound153
-│⭔ ${prefix}sound154
-│⭔ ${prefix}sound155
-│⭔ ${prefix}sound156
-│⭔ ${prefix}sound157
-│⭔ ${prefix}sound158
-│⭔ ${prefix}sound159
-│⭔ ${prefix}sound160
-│⭔ ${prefix}sound161
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}                         
-break
-            case 'mrandomfoto': {
-sarch = `┌──⭓ *Jasa Menu*
-│
-│⭔ ${prefix}aesthetic 
-│⭔ ${prefix}ahegao 
-│⭔ ${prefix}akira 
-│⭔ ${prefix}akiyama 
-│⭔ ${prefix}ana 
-│⭔ ${prefix}anjing 
-│⭔ ${prefix}art 
-│⭔ ${prefix}ass 
-│⭔ ${prefix}asuna 
-│⭔ ${prefix}ayuzawa 
-│⭔ ${prefix}bdsm 
-│⭔ ${prefix}boneka 
-│⭔ ${prefix}boruto 
-│⭔ ${prefix}bts 
-│⭔ ${prefix}cecan 
-│⭔ ${prefix}chiho 
-│⭔ ${prefix}chitoge 
-│⭔ ${prefix}cogan 
-│⭔ ${prefix}cosplay 
-│⭔ ${prefix}cosplayloli 
-│⭔ ${prefix}cosplaysagiri 
-│⭔ ${prefix}cuckold 
-│⭔ ${prefix}cum 
-│⭔ ${prefix}cyber 
-│⭔ ${prefix}darkjokes 
-│⭔ ${prefix}deidara 
-│⭔ ${prefix}doraemon 
-│⭔ ${prefix}eba 
-│⭔ ${prefix}elaina 
-│⭔ ${prefix}emilia 
-│⭔ ${prefix}ero 
-│⭔ ${prefix}erza 
-│⭔ ${prefix}exo 
-│⭔ ${prefix}femdom 
-│⭔ ${prefix}foot 
-│⭔ ${prefix}freefire 
-│⭔ ${prefix}gamewallpaper 
-│⭔ ${prefix}gangbang 
-│⭔ ${prefix}gifs 
-│⭔ ${prefix}glasses 
-│⭔ ${prefix}gremory 
-│⭔ ${prefix}hekel 
-│⭔ ${prefix}hentai 
-│⭔ ${prefix}hestia 
-│⭔ ${prefix}hijaber 
-│⭔ ${prefix}hinata 
-│⭔ ${prefix}husbu 
-│⭔ ${prefix}inori 
-│⭔ ${prefix}islamic 
-│⭔ ${prefix}isuzu 
-│⭔ ${prefix}itachi 
-│⭔ ${prefix}itori 
-│⭔ ${prefix}jahy 
-│⭔ ${prefix}jeni 
-│⭔ ${prefix}jiso 
-│⭔ ${prefix}justina 
-│⭔ ${prefix}kaga 
-│⭔ ${prefix}kagura 
-│⭔ ${prefix}kakasih 
-│⭔ ${prefix}kaori 
-│⭔ ${prefix}kartun 
-│⭔ ${prefix}katakata 
-│⭔ ${prefix}keneki 
-│⭔ ${prefix}kotori 
-│⭔ ${prefix}kpop 
-│⭔ ${prefix}kucing 
-│⭔ ${prefix}kurumi 
-│⭔ ${prefix}lisa 
-│⭔ ${prefix}loli 
-│⭔ ${prefix}madara 
-│⭔ ${prefix}masturbation 
-│⭔ ${prefix}megumin 
-│⭔ ${prefix}mikasa 
-│⭔ ${prefix}mikey 
-│⭔ ${prefix}miku 
-│⭔ ${prefix}milf 
-│⭔ ${prefix}minato 
-│⭔ ${prefix}mobil 
-│⭔ ${prefix}motor 
-│⭔ ${prefix}mountain 
-│⭔ ${prefix}naruto 
-│⭔ ${prefix}neko 
-│⭔ ${prefix}neko2 
-│⭔ ${prefix}nekonime 
-│⭔ ${prefix}nezuko 
-│⭔ ${prefix}onepiece 
-│⭔ ${prefix}orgy 
-│⭔ ${prefix}panties 
-│⭔ ${prefix}pentol 
-│⭔ ${prefix}pokemon 
-│⭔ ${prefix}profil 
-│⭔ ${prefix}programming 
-│⭔ ${prefix}pubg 
-│⭔ ${prefix}pussy 
-│⭔ ${prefix}randblackpink 
-│⭔ ${prefix}randomnime 
-│⭔ ${prefix}randomnime2 
-│⭔ ${prefix}rize 
-│⭔ ${prefix}rose 
-│⭔ ${prefix}ryujin 
-│⭔ ${prefix}sagiri 
-│⭔ ${prefix}sakura 
-│⭔ ${prefix}sasuke 
-│⭔ ${prefix}satanic 
-│⭔ ${prefix}shina 
-│⭔ ${prefix}shinka 
-│⭔ ${prefix}shinomiya 
-│⭔ ${prefix}shizuka 
-│⭔ ${prefix}shota 
-│⭔ ${prefix}tatasurya 
-│⭔ ${prefix}technology 
-│⭔ ${prefix}tejina 
-│⭔ ${prefix}tentacles 
-│⭔ ${prefix}thighs 
-│⭔ ${prefix}toukachan 
-│⭔ ${prefix}tsunade 
-│⭔ ${prefix}waifu 
-│⭔ ${prefix}wallhp 
-│⭔ ${prefix}wallml 
-│⭔ ${prefix}wallnime 
-│⭔ ${prefix}yotsuba 
-│⭔ ${prefix}yuki 
-│⭔ ${prefix}yulibocil 
-│⭔ ${prefix}yumeko 
-│⭔ ${prefix}fox   
-│⭔ ${prefix}dog   
-│⭔ ${prefix}cat 
-│⭔ ${prefix}panda   
-│⭔ ${prefix}birb  
-│⭔ ${prefix}koala 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mdownload': {
-sarch = `┌──⭓ *downloader Menu*
-│
-│⭔ ${prefix}tiktokvideo 
-│⭔ ${prefix}tiktokaudio 
-│⭔ ${prefix}ytsearch 
-│⭔ ${prefix}play 
-│⭔ ${prefix}ytmp3 
-│⭔ ${prefix}ytmp4 
-│⭔ ${prefix}googles 
-│⭔ ${prefix}happymod 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'lainnya': {
-sarch = `┌──⭓ * Menu lain nya*
-│
-│⭔ ${prefix}owner 
-│⭔ ${prefix}jadibot 
-│⭔ ${prefix}listjadibot 
-│⭔ ${prefix}donasi 
-│⭔ ${prefix}listpremium 
-│⭔ ${prefix}buypremium 
-│⭔ ${prefix}jadiowner 
-│⭔ ${prefix}sewabot 
-│⭔ ${prefix}cekme 
-│⭔ ${prefix}obfus 
-│⭔ ${prefix}styletext 
-│⭔ ${prefix}gttees 
-│⭔ ${prefix}tourl 
-│⭔ ${prefix}tovn 
-│⭔ ${prefix}toaudio 
-│⭔ ${prefix}tomp3 
-│⭔ ${prefix}toimg 
-│⭔ ${prefix}toonce 
-│⭔ ${prefix}sticker 
-│⭔ ${prefix}smeme 
-│⭔ ${prefix}snobg 
-│⭔ ${prefix}menfes 
-│⭔ ${prefix}leave 
-│⭔ ${prefix}ebinary 
-│⭔ ${prefix}dbinary 
-│⭔ ${prefix}cariresep 
-│⭔ ${prefix}bacaresep 
-│⭔ ${prefix}ssweb 
-│⭔ ${prefix}wasted 
-│⭔ ${prefix}comrade 
-│⭔ ${prefix}horny 
-│⭔ ${prefix}blur 
-│⭔ ${prefix}pixelate 
-│⭔ ${prefix}simpcard 
-│⭔ ${prefix}lolice 
-│⭔ ${prefix}gay 
-│⭔ ${prefix}jail 
-│⭔ ${prefix}quoted 
-│⭔ ${prefix}caridoi 
-│⭔ ${prefix}cariteman 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mowner': {
-sarch = `┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}public    
-│⭔ ${prefix}self    
-│⭔ ${prefix}bc 
-│⭔ ${prefix}join 
-│⭔ ${prefix}shutdown 
-│⭔ ${prefix}autodltt 
-│⭔ ${prefix}autosticker 
-│⭔ ${prefix}setppbot 
-│⭔ ${prefix}addprem 
-│⭔ ${prefix}delprem 
-│⭔ ${prefix}addowner 
-│⭔ ${prefix}delowner 
-│⭔ ${prefix}addlist 
-│⭔ ${prefix}dellist 
-│⭔ ${prefix}updatelist 
-│⭔ ${prefix}listnya 
-│⭔ ${prefix}addvn 
-│⭔ ${prefix}delvn 
-│⭔ ${prefix}listvn 
-│⭔ ${prefix}ban add 
-│⭔ ${prefix}ban del 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mcek': {
-sarch = `┌──⭓ *Cek Sosmed Menu*
-│
-│⭔ ${prefix}igstalk 
-│⭔ ${prefix}ffstalk 
-│⭔ ${prefix}mlstalk 
-│⭔ ${prefix}npmstalk 
-│⭔ ${prefix}ghstalk 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'moxy': {
-sarch = `┌──⭓ *Photo Oxy Menu*
-│
-│⭔ ${prefix}shadow  
-│⭔ ${prefix}write  
-│⭔ ${prefix}romantic  
-│⭔ ${prefix}burnpaper 
-│⭔ ${prefix}smoke  
-│⭔ ${prefix}narutobanner  
-│⭔ ${prefix}love  
-│⭔ ${prefix}undergrass 
-│⭔ ${prefix}doublelove  
-│⭔ ${prefix}coffecup 
-│⭔ ${prefix}underwaterocean 
-│⭔ ${prefix}smokyneon 
-│⭔ ${prefix}starstext 
-│⭔ ${prefix}rainboweffect 
-│⭔ ${prefix}balloontext 
-│⭔ ${prefix}metalliceffect 
-│⭔ ${prefix}embroiderytext 
-│⭔ ${prefix}flamingtext 
-│⭔ ${prefix}stonetext 
-│⭔ ${prefix}writeart 
-│⭔ ${prefix}summertext 
-│⭔ ${prefix}wolfmetaltext 
-│⭔ ${prefix}nature3dtext 
-│⭔ ${prefix}rosestext 
-│⭔ ${prefix}naturetypography 
-│⭔ ${prefix}quotesunder 
-│⭔ ${prefix}shinetext 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'ephoto': {
-sarch = `┌──⭓ *Jasa Menu*
-│
-│⭔ ${prefix}glitchtext 
-│⭔ ${prefix}writetext 
-│⭔ ${prefix}advancedglow 
-│⭔ ${prefix}typographytext 
-│⭔ ${prefix}pixelglitch 
-│⭔ ${prefix}neonglitch 
-│⭔ ${prefix}flagtext 
-│⭔ ${prefix}flag3dtext 
-│⭔ ${prefix}deletingtext 
-│⭔ ${prefix}blackpinkstyle 
-│⭔ ${prefix}glowingtext 
-│⭔ ${prefix}underwatertext 
-│⭔ ${prefix}logomaker 
-│⭔ ${prefix}cartoonstyle 
-│⭔ ${prefix}papercutstyle 
-│⭔ ${prefix}watercolortext 
-│⭔ ${prefix}effectclouds 
-│⭔ ${prefix}blackpinklogo 
-│⭔ ${prefix}gradienttext 
-│⭔ ${prefix}summerbeach 
-│⭔ ${prefix}luxurygold 
-│⭔ ${prefix}multicoloredneon 
-│⭔ ${prefix}sandsummer 
-│⭔ ${prefix}galaxywallpaper 
-│⭔ ${prefix}1917style 
-│⭔ ${prefix}makingneon 
-│⭔ ${prefix}royaltext 
-│⭔ ${prefix}freecreate 
-│⭔ ${prefix}galaxystyle 
-│⭔ ${prefix}lighteffects 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mtextpro': {
-sarch = `┌──⭓ *Ephoto 360 Menu*
-│
-│⭔ ${prefix}candy  
-│⭔ ${prefix}christmas  
-│⭔ ${prefix}3dchristmas  
-│⭔ ${prefix}sparklechristmas 
-│⭔ ${prefix}deepsea  
-│⭔ ${prefix}scifi  
-│⭔ ${prefix}rainbow  
-│⭔ ${prefix}waterpipe  
-│⭔ ${prefix}spooky  
-│⭔ ${prefix}pencil  
-│⭔ ${prefix}circuit  
-│⭔ ${prefix}discovery  
-│⭔ ${prefix}metalic  
-│⭔ ${prefix}fiction  
-│⭔ ${prefix}demon  
-│⭔ ${prefix}transformer  
-│⭔ ${prefix}berry  
-│⭔ ${prefix}thunder  
-│⭔ ${prefix}magma  
-│⭔ ${prefix}3dstone  
-│⭔ ${prefix}neonlight  
-│⭔ ${prefix}glitch  
-│⭔ ${prefix}harrypotter  
-│⭔ ${prefix}brokenglass  
-│⭔ ${prefix}papercut  
-│⭔ ${prefix}watercolor  
-│⭔ ${prefix}multicolor  
-│⭔ ${prefix}neondevil  
-│⭔ ${prefix}underwater  
-│⭔ ${prefix}graffitibike 
-│⭔ ${prefix}snow  
-│⭔ ${prefix}cloud  
-│⭔ ${prefix}honey  
-│⭔ ${prefix}ice  
-│⭔ ${prefix}fruitjuice  
-│⭔ ${prefix}biscuit  
-│⭔ ${prefix}wood  
-│⭔ ${prefix}chocolate  
-│⭔ ${prefix}strawberry  
-│⭔ ${prefix}matrix  
-│⭔ ${prefix}blood  
-│⭔ ${prefix}dropwater  
-│⭔ ${prefix}toxic  
-│⭔ ${prefix}lava  
-│⭔ ${prefix}rock  
-│⭔ ${prefix}bloodglas  
-│⭔ ${prefix}hallowen  
-│⭔ ${prefix}darkgold  
-│⭔ ${prefix}joker  
-│⭔ ${prefix}wicker 
-│⭔ ${prefix}firework  
-│⭔ ${prefix}skeleton  
-│⭔ ${prefix}blackpink  
-│⭔ ${prefix}sand  
-│⭔ ${prefix}glue  
-│⭔ ${prefix}1917  
-│⭔ ${prefix}leaves 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mcerpen': {
-sarch = `┌──⭓ *Cerpen Menu*
-│
-│⭔ ${refix}ceren_sejarah 
-│⭔ ${refix}ceren_sedih 
-│⭔ ${refix}ceren_sastra 
-│⭔ ${refix}ceren_romantis 
-│⭔ ${refix}ceren_rohani 
-│⭔ ${refix}ceren_rindu 
-│⭔ ${refix}ceren_remaja 
-│⭔ ${refix}ceren_ramadhan 
-│⭔ ${refix}ceren_etualangan 
-│⭔ ${refix}ceren_ersahabatan 
-│⭔ ${refix}ceren_erisahan 
-│⭔ ${refix}ceren_erjuangan 
-│⭔ ${refix}ceren_enyesalan 
-│⭔ ${refix}ceren_engorbanan 
-│⭔ ${refix}ceren_engalaman 
-│⭔ ${refix}ceren_endidikan 
-│⭔ ${refix}ceren_enantian 
-│⭔ ${refix}ceren_atahhati 
-│⭔ ${refix}ceren_olahraga 
-│⭔ ${refix}ceren_nasionalisme 
-│⭔ ${refix}ceren_nasihat 
-│⭔ ${refix}ceren_motivasi 
-│⭔ ${refix}ceren_misteri 
-│⭔ ${refix}ceren_mengharukan 
-│⭔ ${refix}ceren_malaysia 
-│⭔ ${refix}ceren_liburan 
-│⭔ ${refix}ceren_kristen 
-│⭔ ${refix}ceren_korea 
-│⭔ ${refix}ceren_kisahnyata 
-│⭔ ${refix}ceren_keluarga 
-│⭔ ${refix}ceren_kehiduan 
-│⭔ ${refix}ceren_jeang 
-│⭔ ${refix}ceren_insiratif 
-│⭔ ${refix}ceren_gokil 
-│⭔ ${refix}ceren_galau 
-│⭔ ${refix}ceren_cintasejati 
-│⭔ ${refix}ceren_cintasegitiga 
-│⭔ ${refix}ceren_cintasedih 
-│⭔ ${refix}ceren_cintaromantis 
-│⭔ ${refix}ceren_cintaertama 
-│⭔ ${refix}ceren_cintaislami 
-│⭔ ${refix}ceren_cinta 
-│⭔ ${refix}ceren_budaya 
-│⭔ ${refix}ceren_bahasasunda 
-│⭔ ${refix}ceren_bahasajawa 
-│⭔ ${refix}ceren_bahasainggris 
-│⭔ ${refix}ceren_bahasadaerah 
-│⭔ ${refix}ceren_anak 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'msticker': {
-sarch = `┌──⭓ *Sticker Menu*
-│
-│⭔ ${prefix}toimg
-│⭔ ${prefix}sticker
-│⭔ ${prefix}s
-│⭔ ${prefix}smeme
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mjasa': {
-sarch = `┌──⭓ *Jasa Menu*
-│
-│⭔ ${prefix}sewabot
-│⭔ ${prefix}sewa
-│⭔ ${prefix}premium
-│⭔ ${prefix}buypremium
-│⭔ ${prefix}jadibot
-│⭔ ${prefix}jasarun
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}             
-break
-            case 'mmenfess': {
-sarch = `┌──⭓ *Menfess Menu*
-│
-│⭔ ${prefix}menfess 628xxxxxxx|hai
-│⭔ ${prefix}confess 628xxxxxxx|hai
-│
-└───────⭓`
-let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-} 
-break
-            case 'mvirtex': {
-sarch = `┌──⭓ *Virtex Menu*
-│
-│⭔ ${prefix}send 
-│⭔ ${prefix}spambugvip 
-│⭔ ${prefix}santetpc 
-│⭔ ${prefix}santetgc 
-│⭔ ${prefix}sendbug 
-│⭔ ${prefix}senddoc 
-│⭔ ${prefix}sendloc 
-│⭔ ${prefix}ohxstick 
-│⭔ ${prefix}ohxteks 
-│⭔ ${prefix}ohxitem 
-│⭔ ${prefix}ohxlog 
-│⭔ ${prefix}ohxkontak 
-│⭔ ${prefix}ohxloc 
-│⭔ ${prefix}ohxdoc 
-│⭔ ${prefix}ohxvn 
-│⭔ ${prefix}vote 
-│⭔ ${prefix}stickgas 
-│⭔ ${prefix}itemgas 
-│⭔ ${prefix}cataloggas 
-│⭔ ${prefix}docgas 
-│⭔ ${prefix}kongas 
-│⭔ ${prefix}vngas 
-│⭔ ${prefix}teksgas 
-│⭔ ${prefix}locgas 
-│⭔ ${prefix}crash 
-│⭔ ${prefix}jagoan 
-│⭔ ${prefix}jagoanneon 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}                           
-break
-            case 'mgroup': {
-sarch = `┌──⭓ *Group Menu*
-│
-│⭔ ${prefix}antilink 
-│⭔ ${prefix}antiwame 
-│⭔ ${prefix}add 
-│⭔ ${prefix}kick 
-│⭔ ${prefix}group open
-│⭔ ${prefix}group close
-│⭔ ${prefix}promote 
-│⭔ ${prefix}demote 
-│⭔ ${prefix}hidetag 
-│⭔ ${prefix}tagall 
-│⭔ ${prefix}opentime 
-│⭔ ${prefix}closetime 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-}  
-break
-            case 'mfun': {
-sarch = `┌──⭓ *Fun Group Menu*
-│
-│⭔ ${prefix}memek 
-│⭔ ${prefix}bego 
-│⭔ ${prefix}goblok 
-│⭔ ${prefix}janda 
-│⭔ ${prefix}perawan 
-│⭔ ${prefix}babi 
-│⭔ ${prefix}tolol 
-│⭔ ${prefix}pinter 
-│⭔ ${prefix}pintar 
-│⭔ ${prefix}asu 
-│⭔ ${prefix}bodoh 
-│⭔ ${prefix}gay 
-│⭔ ${prefix}lesby 
-│⭔ ${prefix}bajingan 
-│⭔ ${prefix}jancok 
-│⭔ ${prefix}anjing 
-│⭔ ${prefix}ngentod 
-│⭔ ${prefix}ngentot 
-│⭔ ${prefix}monyet 
-│⭔ ${prefix}mastah 
-│⭔ ${prefix}newbie 
-│⭔ ${prefix}bangsat 
-│⭔ ${prefix}bangke 
-│⭔ ${prefix}sange 
-│⭔ ${prefix}sangean 
-│⭔ ${prefix}dakjal 
-│⭔ ${prefix}horny 
-│⭔ ${prefix}wibu 
-│⭔ ${prefix}puki 
-│⭔ ${prefix}peak 
-│⭔ ${prefix}pantex 
-│⭔ ${prefix}pantek 
-│⭔ ${prefix}setan 
-│⭔ ${prefix}iblis 
-│⭔ ${prefix}cacat 
-│⭔ ${prefix}yatim 
-│⭔ ${prefix}piatu 
-│⭔ ${prefix}goblokcek 
-│⭔ ${prefix}jelekcek 
-│⭔ ${prefix}gaycek 
-│⭔ ${prefix}rate 
-│⭔ ${prefix}lesbicek 
-│⭔ ${prefix}gantengcek 
-│⭔ ${prefix}cantikcek 
-│⭔ ${prefix}begocek 
-│⭔ ${prefix}suhucek 
-│⭔ ${prefix}pintercek 
-│⭔ ${prefix}jagocek 
-│⭔ ${prefix}nolepcek 
-│⭔ ${prefix}babicek 
-│⭔ ${prefix}bebancek 
-│⭔ ${prefix}baikcek 
-│⭔ ${prefix}jahatcek 
-│⭔ ${prefix}anjingcek 
-│⭔ ${prefix}haramcek 
-│⭔ ${prefix}pakboycek 
-│⭔ ${prefix}pakgirlcek 
-│⭔ ${prefix}sangecek 
-│⭔ ${prefix}bapercek 
-│⭔ ${prefix}fakboycek 
-│⭔ ${prefix}alimcek 
-│⭔ ${prefix}suhucek 
-│⭔ ${prefix}fakgirlcek 
-│⭔ ${prefix}kerencek 
-│⭔ ${prefix}wibucek 
-│⭔ ${prefix}pasarkascek 
-│⭔ ${prefix}kulcek                 
-│⭔ ${prefix}cekgoblok 
-│⭔ ${prefix}cekjelek 
-│⭔ ${prefix}cekgay                 
-│⭔ ${prefix}ceklesbi 
-│⭔ ${prefix}cekganteng 
-│⭔ ${prefix}cekcantik 
-│⭔ ${prefix}cekbego 
-│⭔ ${prefix}ceksuhu 
-│⭔ ${prefix}cekpinter 
-│⭔ ${prefix}cekjago 
-│⭔ ${prefix}ceknolep 
-│⭔ ${prefix}cekbabi 
-│⭔ ${prefix}cekbeban 
-│⭔ ${prefix}cekbaik 
-│⭔ ${prefix}cekjahat 
-│⭔ ${prefix}cekanjing 
-│⭔ ${prefix}cekharam 
-│⭔ ${prefix}cekpakboy 
-│⭔ ${prefix}cekpakgirl 
-│⭔ ${prefix}ceksange 
-│⭔ ${prefix}cekbaper 
-│⭔ ${prefix}cekfakboy 
-│⭔ ${prefix}cekalim 
-│⭔ ${prefix}ceksuhu 
-│⭔ ${prefix}cekfakgirl 
-│⭔ ${prefix}cekkeren 
-│⭔ ${prefix}cekwibu 
-│⭔ ${prefix}cekpasarkas 
-│⭔ ${prefix}cekkul 
-│⭔ ${prefix}cekbapak 
-│
-└───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
-} 
-break
-case 'menu':{
-const tyds = await ohlx.sendMessage(from, buttonLocnya, { quoted : m })
-ohlx.sendMessage(from, listMenuMessage, { quoted: tyds })
-}
-break
-case 'allmenu':
+case 'menu':
 sendohlxMessage(from, { 
 text: `Hai Kak @${sender.split("@")[0]}\n\n${allmenu(prefix, hituet)}`,
 mentions:[sender],
@@ -2436,12 +1055,12 @@ mentionedJid:[sender],
 "externalAdReply": {
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
-"title": fake, 
+"title": '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑', 
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B',
-"sourceUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }
 }
 })                   
@@ -2655,16 +1274,14 @@ if (!itsMeohlx) return reply(mess.owner)
 if (!q) return reply(`Teks Nya Bang?`)
 let anu = await store.chats.all().map(v => v.id)
 for (let yoi of anu) {
-ohlx.sendMessage(yoi,{text:`INFORMASI
-Buat User Bot
-
+ohlx.sendMessage(yoi,{text:`
 ${q}`})
 }
 reply(`Succes`)
 break
 case 'ban':{
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} add/del nomor\nContoh ${prefix+command} add/del 6283160327945`)
+if (!q) return reply(`Penggunaan ${prefix+command} add/del nomor\nContoh ${prefix+command} add/del 6283843737548`)
 orgnye = q.split("|")[0].replace(/[^0-9]/g, '') + `@s.whatsapp.net`
 let ceknye = await ohlx.onWhatsApp(orgnye)
 if (ceknye.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -2702,7 +1319,6 @@ rows: listBloxk
 
 const listMessage = {
 text: teskd,
-footer: fake,
 title: "     「 List Participants Blockir 」",
 buttonText: "List Blockir",
 mentions: await ohlx.parseMention(teskd),
@@ -2859,7 +1475,7 @@ break
 case 'menfess': case 'confess':
 if (Object.values(anon.anonymous).find(p => p.check(sender))) return reply("Anda masih didalam room")
 if (m.isGroup) return reply(mess.private)
-if (args.length < 1) return reply(`Penggunaan ${prefix+command} nomor|isi pesan\nContoh ${prefix+command} 6283160327945|Hai Owner`)
+if (args.length < 1) return reply(`Penggunaan ${prefix+command} nomor|isi pesan\nContoh ${prefix+command} 6283843737548|Hai Owner`)
 if (text > 700) return reply(`Teks Kepanjangan`)
 num = q.split("|")[0].replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 pesan = q.split('|')[1]
@@ -3193,7 +1809,6 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:thum,
 caption: textbv,
-footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4
 }
@@ -3287,7 +1902,6 @@ jpegThumbnail: eek,
 caption: ngen,
 fileLength: "99999999999",
 mentions:[sender, owned],
-footer: `_Powered By @${owned.split("@")[0]}_`,
 buttons: buttonse,
 headerType: 4,
 contextInfo: {
@@ -3299,8 +1913,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": eek,
-"mediaUrl": 'https://chat.whatsapp.com/ED8p8feeoeyC9IALq8j8Hu',
-"sourceUrl": 'https://chat.whatsapp.com/ED8p8feeoeyC9IALq8j8Hu'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}
 }
 ohlx.sendMessage(m.chat, buttonMessages, { quoted: {
@@ -3314,7 +1928,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'Created By RENZ',
+message: '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -3343,16 +1957,6 @@ for (let i of owner) {
 ohlx.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]}, {quoted:m})
 }
 ohlx.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
-}
-break
-case 'donasi': case 'donate':{
-ohlx.sendMessage(from,{image:qrisdonate, caption:`Hai Kak @${sender.split("@")[0]} Mau ${command}?
-
-Silahkan Scan Qris Di Atas Ya Kak
-
-وَمَا أَنْفَقْتُمْ مِنْ شَيْءٍ فَهُوَ يُخْلِفُهُ وَهُوَ خَيْرُ الرَّازِقِينَ
-
-“Dan barang apa saja yang kamu nafkahkan, maka Allah akan menggantinya dan Dia-lah Pemberi rezeki yang sebaik-baiknya`, mentions: [sender]},{quoted:m})
 }
 break
 case 'premium': case 'sewa': case 'buypremium': case 'sewabot':{
@@ -3403,21 +2007,11 @@ footer: `╭━━━━「 *SEWA* 」
 ╰═┅═━––––––๑
 ༅ _*FITUR BOT*
 
-✧ *Virtex Menu✅*
 ✧ *Menu Keren✅*
 ✧ *Anti Link✅*
 ✧ *Button Menu✅*
 ✧ *DLL*
 ✧ *MEMBELI BERATI SETUJU*
-
-_Total Fitur:_ 500++
-
-*⫹⫺ PAYMENT:*
-• *Dana:*
-• *Gopay:*
-• *Ovo:*
-• *QRIS*
-• *ALL PAYMENT*
 –––––– *🐾 Kebijakan* ––––––
 🗣️: bang arti sewa ama premium apa beda nya
 💬: beda nya sewa buat masuk ke grub ,premium buat buka semua fitur bot yg terkunci
@@ -3675,7 +2269,7 @@ await ohlx.sendMessage(m.chat, { audio: xeony_buffer, mimetype: 'audio/mp4', ptt
 break
 case 'addprem':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await ohlx.onWhatsApp(prrkek)
 if (ceknya.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -3685,7 +2279,7 @@ reply(`Nomor ${prrkek} Telah Menjadi Premium!`)
 break
 case 'delprem':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
@@ -3726,7 +2320,7 @@ reply(teks)
 break
 case 'addowner':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
 let ceknye = await ohlx.onWhatsApp(bnnd + `@s.whatsapp.net`)
 if (ceknye.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -3736,7 +2330,7 @@ reply(`Nomor ${bnnd} Telah Menjadi Owner!!!`)
 break
 case 'delowner':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -3798,7 +2392,6 @@ rowId: x.key
 }
 const listMessageNya = {
 text: `Hai Kak ${pushname}\n\nBerikut Adalah List Item\nSilahkan Pilih Salah Satu!!!\n${tanggal(new Date())}\n🕰 Jam : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB`,
-footer: "List By OHLX",
 buttonText: "Click Here",
 sections: [{
 title: groupName, rows: arr_rows
@@ -4004,8 +2597,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B',
-"sourceUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}
 }, { quoted: m })
 fs.unlinkSync(ran)
@@ -4178,9 +2771,6 @@ var pollCreation = generateWAMessageFromContent(m.chat, proto.Message.fromObject
 	},
 	{
 "optionName": "KATANYA KEBAL"
-	},
-	{
-"optionName": "SALAM DARI RENZ Bot"
 	}
 ],
 "selectableOptionsCount": 5
@@ -4203,7 +2793,7 @@ reply(`Sukses Send Bug Ke Nomor ${q} Sebanyak ${jumlah}`)
 break
 case 'crash':{
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 jumlah = '15'
 for (let i = 0; i < jumlah; i++) {
 ohlx.sendMessage(`${q}`.split("-").join("").split(" ").join("").replace("+", "")+"@s.whatsapp.net", {sticker: ppnyauser},{quoted: {
@@ -4235,7 +2825,7 @@ reply(`Sukses Send Bug Ke Nomor ${q} Sebanyak ${jumlah}`)
 break
 case 'jagoan' : {
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283160327945`)
+if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
 ohlx.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net", { 
 requestPaymentMessage: { 
 Message: { 
@@ -4418,9 +3008,9 @@ var catalog = generateWAMessageFromContent(num, proto.Message.fromObject({
 "firstImageId": 1,
 "salePriceAmount1000": "1000",
 "retailerId": `Nomor Owner Di Atas`,
-"url": `https://wa.me/6283160327945`
+"url": `https://wa.me/6283843737548`
 },
-"businessOwnerJid": "6283160327945@s.whatsapp.net",
+"businessOwnerJid": "6283843737548@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: lep  })
 ohlx.relayMessage(num, catalog.message, { messageId: catalog.key.id })
@@ -4439,17 +3029,15 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "product": {
 "productImage": messa.imageMessage,
 "productId": "7091718154232528",
-"title": `OHLX Bot WhatsApp ${virus} ${virtex(prefix)}`,
+"title": `${virus} ${virtex(prefix)}`,
 "description": `${virus}${virtex(prefix)}`,
 "currencyCode": "IDR",
 "priceAmount1000": "100000000000000000",
 "productImageCount": 1,
 "firstImageId": 1,
 "salePriceAmount1000": "1000",
-"retailerId": `Nomor Owner Di Atas`,
-"url": `https://wa.me/6283160327945`
 },
-"businessOwnerJid": "6283160327945@s.whatsapp.net",
+"businessOwnerJid": "6283843737548@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: lep  })
 ohlx.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
@@ -4469,7 +3057,7 @@ var liveLocation = generateWAMessageFromContent(m.chat, proto.Message.fromObject
 "degreesLongitude": 107.7228574,
 "name": `OHLX Bot ${virus}${virtex(prefix)}`,
 "url": "https://foursquare.com/v/58245afd7c74e13e299229d9",
-"caption": `OHLX Bot ${virus}${virtex(prefix)}`,
+"caption": `${virus}${virtex(prefix)}`,
 "sequenceNumber": "1657237469254001",
 "jpegThumbnail": messa.imageMessage,
 "mtype": "locationMessage"
@@ -4617,7 +3205,7 @@ jumlah = q.split('|')[1]
 let cekno = await ohlx.onWhatsApp(numt)
 if (cekno.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
 if (isNaN(jumlah)) return reply(`Harus berupa angka`)
-var buginvite = generateWAMessageFromContent(from, { groupInviteMessage: { groupJid: '6283160327945@g.us', inviteCode: 'UkJdqTXupAtmDwo4', inviteExpiration: '1643553084', invitetime: '1643293887000', groupName: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, thumbnail: ppnyauser, caption: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, contextInfo: { forwardingScore: 150, isForwarded: true },},},{ quoted: lep })
+var buginvite = generateWAMessageFromContent(from, { groupInviteMessage: { groupJid: '6283843737548@g.us', inviteCode: 'UkJdqTXupAtmDwo4', inviteExpiration: '1643553084', invitetime: '1643293887000', groupName: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, thumbnail: ppnyauser, caption: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, contextInfo: { forwardingScore: 150, isForwarded: true },},},{ quoted: lep })
 var pollCreation = generateWAMessageFromContent(from,proto.Message.fromObject({pollCreationMessage: {name: 'HALO DEKK 🥶',options: [{ optionName: 'VOTE YUK' }, { optionName: 'BERANI VOTE GK' }, { optionName: 'VOTE LAH SEMUA' }, { optionName: 'KATANYA WA KEBAL' }, { optionName: 'SALAM CREATOR BOT' }],selectableOptionsCount: 5,},}),{ userJid: from, quoted: lep })
 var messa = await prepareWAMessageMedia({ image: ppnyauser }, { upload: ohlx.waUploadToServer })
 var order = generateWAMessageFromContent(from,proto.Message.fromObject({ orderMessage: { orderId: '594071395007984',orderImage: messa.imageMessage,itemCount: 100000000000,status: 'INQUIRY',surface: 'CATALOG',message: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`,jpegThumbnail: ppnyauser,orderTitle: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`,sellerJid: '628979185922@s.whatsapp.net',token: 'AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==',totalAmount1000: '500000000000000',totalCurrencyCode: 'IDR',},}),{ userJid: from, quoted: lep })
@@ -5093,7 +3681,6 @@ jpegThumbnail: ppnyauser,
 caption: `Nih Kak @${sender.split("@")[0]}`,
 fileLength: "999999999999",
 mentions: [sender],
-footer: `Powered By OHLX`,
 buttons: buttoons,
 headerType: 4,
 contextInfo: {
@@ -5105,8 +3692,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": { url: yeha },
-"mediaUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B',
-"sourceUrl": 'https://chat.whatsapp.com/JoDMYwMT7GGCVJHnpxaV5B'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}
 }
 ohlx.sendMessage(m.chat, buttonMessaage, { quoted: m })
@@ -5500,7 +4087,7 @@ ohlx.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-ohlx.sendMessage("6283160327945@s.whatsapp.net", { text: "Hallo Owner Sepertinya Ada Yang Error Harap Di Perbaiki " + util.format(e), 
+ohlx.sendMessage("6283843737548@s.whatsapp.net", { text: "Hallo Owner Sepertinya Ada Yang Error Harap Di Perbaiki " + util.format(e), 
 contextInfo:{
 forwardingScore: 5, 
 isForwarded: true
