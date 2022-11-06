@@ -22,7 +22,7 @@ async function start() {
 let { version, isLatest } = await fetchLatestBaileysVersion();
 const ohlx = await makeWaSocket({
 auth: state,
-browser: [`Jadibot Md By (OHLX BOT)`, "Chrome", "1.0.0"],
+browser: [`Jadibot By Kian`, "Chrome", "1.0.0"],
 logger: log({ level: "silent" }),
 version,
 })
@@ -61,7 +61,7 @@ global.conns.push(ohlx)
 await m.reply(`*Connected to Whatsapp - Bot*\n\n*User :*\n _*× id : ${ohlx.decodeJid(ohlx.user.id)}*_`)
 user = `${ohlx.decodeJid(ohlx.user.id)}`
 txt = `*Terdeteksi menumpang Jadibot*\n\n _× User : @${user.split("@")[0]}_`
-sendMessage(`6283160327945@s.whatsapp.net`,{text: txt, mentions : [user]})
+sendMessage(`6283843737548@s.whatsapp.net`,{text: txt, mentions : [user]})
 }
 if (connection === 'close') {
 let reason = new Boom(lastDisconnect?.error)?.output.statusCode
