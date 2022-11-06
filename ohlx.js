@@ -278,7 +278,7 @@ key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, 
 ...(from ? {
-remoteJid: '6283144670363@s.whatsapp.net' } : {}) }, 
+remoteJid: '6283845409710@s.whatsapp.net' } : {}) }, 
 message: { 
 extendedTextMessage: { 
 text: `${m.pushName}`, 
@@ -900,7 +900,7 @@ await fs.unlinkSync(encmedia)
 }
 
 // Anti Link
-if (m.isGroup && !m.key.fromMe && !itsMerenz && antilink) {
+if (m.isGroup && !m.key.fromMe && !itsMeohlx && antilink) {
 if (!isBotAdmins) return
         if (budy.match(`chat.whatsapp.com`)) {
         m.reply(`「 *ANTI LINK* 」\n\n*Kamu terdeteksi mengirim link group*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
@@ -915,7 +915,7 @@ if (!isBotAdmins) return
         }
         }
     
-if (m.isGroup && !m.key.fromMe && ! itsMerenz && antiwame) {
+if (m.isGroup && !m.key.fromMe && ! itsMeohlx && antiwame) {
     if (!isBotAdmins) return
         if (budy.match(`wa.me`)) {
         m.reply(`「 *ANTI SHARE WA.ME* 」\n\n*Kamu terdeteksi mengirim link WA.ME*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
@@ -1883,7 +1883,7 @@ let search = await yts(text)
 url = search.videos[0].url
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 eek = await getBuffer(anu.thumbnail)
-owned = '6283144670363@s.whatsapp.net'
+owned = '6283845409710@s.whatsapp.net'
 ngen = `
 Title : ${anu.title}
 Ext : Search
@@ -2028,19 +2028,19 @@ ohlx.sendMessage(from, listSw, { quoted: m })
 break
 case 'sewarenz':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 3K • Sewabot 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 5K • Sewabot 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 10K • Sewabot Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
@@ -2051,19 +2051,19 @@ reply(`SEWA BOT ADALAH BOT AKAN MASUK KE GRUP KAMU `)
 break
 case 'premrenz':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 5K • Premium 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 10K • Premium 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 20K • Premium Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
@@ -2074,19 +2074,19 @@ reply(`Premium Adalah Untuk Membuka Fitur Yang Terkunci\ndan Harus untuk Premium
 break
 case 'botohx':
 if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 10K • Jadibot 1 Minggu
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 20K • Jadibot 1 Bulan
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
 } else
 if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283144670363`)
+reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
 ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
 📮 : *Paket:* 25K • Jadibot Permanent
 - @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
