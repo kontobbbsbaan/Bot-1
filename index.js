@@ -108,7 +108,7 @@ ppgroup = await ohlx.profilePictureUrl(anu.id, 'image')
 ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 if (anu.action == 'add') {
-ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Hello Sis @${num.split("@")[0]}, Welcome To The Group ${metadata.subject}, I Hope You Enjoy It, Sis`, 
+ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Hello @${num.split("@")[0]}, Welcome To The Group ${metadata.subject}, I Hope You Enjoy It, Sis`, 
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
 "mentionedJid": [num],
@@ -119,11 +119,11 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": await reSize(ppuser, 200, 200),
-"mediaUrl": 'https://linktr.ee/ohlxbot',
-"sourceUrl": 'https://linktr.ee/ohlxbot'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}})
 } else if (anu.action == 'remove') {
-ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye Sis @${num.split("@")[0]}, I Hope You Feel At Home In Nature`,
+ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye @${num.split("@")[0]}, I Hope You Feel At Home In Nature`,
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
 "mentionedJid": [num],
@@ -134,8 +134,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": await reSize(ppuser, 200, 200),
-"mediaUrl": 'https://linktr.ee/ohlxbot',
-"sourceUrl": 'https://linktr.ee/ohlxbot'
+"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
+"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}})
 }
 }
