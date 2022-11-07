@@ -148,7 +148,7 @@ autoreadsw = true
         const numberQuery = q.replace(new RegExp('[()+-/ +/]', 'gi'), '') + '@s.whatsapp.net'
         const usernya = mentionByReply ? mentionByReply : mentionByTag[0]
         const Input = mentionByTag[0] ? mentionByTag[0] : mentionByReply ? mentionByReply : q ? numberQuery : false
-      const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': 'OHLX Dev', 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;OHLX Dev,;;;\nFN:OHLX Dev\nitem1.TEL;waid=6283843737548:6283843737548\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}  
+      const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': 'OHLX Dev', 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;OHLX Dev,;;;\nFN:OHLX Dev\nitem1.TEL;waid=6283845409710:6283845409710\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}  
     	
 try {
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -457,7 +457,7 @@ participant: `0@s.whatsapp.net`,
 "surface": "CATALOG",
 "message": `OHLX Bot WhatsApp${ngazap(prefix)}`,
 "orderTitle": "OHLX Bot WhatsApp${ngazap(prefix)}",
-"sellerJid": "6283843737548@s.whatsapp.net",
+"sellerJid": "6283845409710@s.whatsapp.net",
 "token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
 "totalAmount1000": "500000000000000",
 "totalCurrencyCode": "IDR"
@@ -539,7 +539,7 @@ templateButtons: [
 ]})
 }
 
-const botzohlx = "6283843737548@s.whatsapp.net"
+const botzohlx = "6283845409710@s.whatsapp.net"
 const mark = "0@s.whatsapp.net"
 const timestamp = speed()
 const latensi = speed() - timestamp
@@ -1035,7 +1035,7 @@ const repf = await ohlx.sendMessage(from, {
 contacts: { 
 displayName: `${list.length} Kontak`, 
 contacts: list }, mentions: [sender] }, { quoted: m })
-ohlx.sendMessage(from, { text : `Hai Kak @${sender.split("@")[0]}, Nih Owner Ku Jangan Macam-macam Ya`, mentions: [sender]}, { quoted: repf })
+ohlx.sendMessage(from, { text : `Hai Kak @${sender.split("@")[0]}, Nih Owner Ku`, mentions: [sender]}, { quoted: repf })
 }
 break
 case 'join': {
@@ -1065,6 +1065,71 @@ mentionedJid:[sender],
 }
 })                   
 break
+case 'script': case 'sc':
+sendohlxMessage(from, { 
+text: `MASIH DALAM PROSES\nJANGAN LUPA SUBSCRIBE YA https://youtube.com/channel/UC5mUj5o2S4zwwGNbPA2J31Q`,
+mentions:[sender],
+contextInfo:{
+mentionedJid:[sender],
+"externalAdReply": {
+"showAdAttribution": true,
+"renderLargerThumbnail": false,
+"title": 'JIKA INGIN BELI SCRIPT NYA KLIK DISINI ', 
+"containsAutoReply": true,
+"mediaType": 1, 
+"thumbnail": ppnyauser,
+"mediaUrl": 'https://api.whatsapp.com/send?phone=+6283845409710',
+"sourceUrl": 'https://api.whatsapp.com/send?phone=+6283845409710'
+}
+}
+})
+break
+case 'premium': case 'sewa': case 'buypremium': case 'sewabot':
+sendohlxMessage(from, { 
+text: `╭━━━━「 𝗦𝗘𝗪𝗔 」
+┊⫹⫺ *Hemat:* _10k/grup (1 Minggu)_
+┊⫹⫺ *Normal:* _20k/grup (1 bulan)_                                         
+┊⫹⫺ *permanen:* = _25k/grup (unlimited)_
+╰═┅═━––––––๑
+
+╭━━━━「 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 」
+┊⫹⫺ *Hemat:* _5k (10 Hari)_
+┊⫹⫺ *Normal:* _10k (1 bulan)_                                       
+┊⫹⫺ *Permanent:* = _20k (Unlimited)_
+╰═┅═━––––––๑
+
+𝗙𝗜𝗧𝗨𝗥 𝗕𝗢𝗧 
+
+➥ 𝗺𝗲𝗻𝘂 𝗸𝗲𝗿𝗲𝗻
+➥ 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸,𝗮𝗻𝘁𝗶𝘄𝗮𝗺𝗲,𝗮𝗻𝘁𝗶𝘁𝗼𝘅𝗶𝗰
+➥ 𝗯𝘂𝘁𝘁𝗼𝗻 𝗺𝗲𝗻𝘂
+➥ 𝗮𝗻𝘁𝗶 𝗲𝗿𝗿𝗼𝗿 𝟭𝟬𝟬%
+➥ 𝘃𝗶𝗿𝘁𝗲𝘅,𝗯𝘂𝗴𝗺𝗲𝗻𝘂,𝘄𝗮𝗿
+➥ 𝗷𝗮𝗱𝗶 𝗯𝗼𝘁
+➥ 𝗷𝗮𝗱𝗶 𝗼𝘄𝗻𝗲𝗿
+
+🗣️: bang arti sewa ama premium apa beda nya
+💬: beda nya sewa buat masuk ke grub ,premium buat buka semua fitur bot yg terkunci
+🗣️: Scam/nipu ga nih kak?
+💬: Enggalah, Owner 100% Tepati janji
+
+Minat? Chat Owner https://api.whatsapp.com/send?phone=+6283845409710`,
+mentions:[sender],
+contextInfo:{
+mentionedJid:[sender],
+"externalAdReply": {
+"showAdAttribution": true,
+"renderLargerThumbnail": true,
+"title": 'INGIN SEWA BOT KLIK DISINI', 
+"containsAutoReply": true,
+"mediaType": 1, 
+"thumbnail": ppnyauser,
+"mediaUrl": 'https://api.whatsapp.com/send?phone=+6283845409710',
+"sourceUrl": 'https://api.whatsapp.com/send?phone=+6283845409710'
+}
+}
+})
+break
 case 'caridoi':
 case 'cariteman':
 if (!isPrem) return replyprem(mess.premium)
@@ -1078,10 +1143,6 @@ reply('Berhasil Mendapatkan Satu Orang')
 setTimeout(() => {
 ohlx.sendMessage(from, {text: `Nih Kak @${teman.split("@")[0]}`, mentions: [teman]}, { quoted : m })
 }, 9000)
-break
-case 'sc': case 'scriptbot': case 'scbot':{
-ohlx.sendMessage(m.chat,{text:`Mau Script Bot Nya? Silahkan beli Chat Aja @${creator.split("@")[0]}`,mentions: [creator], },{quoted:m})
-}
 case 'setstatuts': case 'setbio':
 if (!itsMeohlx) return reply(mess.owner)
    if (isBan) return reply(mess.ban)	 			
@@ -1281,7 +1342,7 @@ reply(`Succes`)
 break
 case 'ban':{
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} add/del nomor\nContoh ${prefix+command} add/del 6283843737548`)
+if (!q) return reply(`Penggunaan ${prefix+command} add/del nomor\nContoh ${prefix+command} add/del 6283845409710`)
 orgnye = q.split("|")[0].replace(/[^0-9]/g, '') + `@s.whatsapp.net`
 let ceknye = await ohlx.onWhatsApp(orgnye)
 if (ceknye.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -1475,7 +1536,7 @@ break
 case 'menfess': case 'confess':
 if (Object.values(anon.anonymous).find(p => p.check(sender))) return reply("Anda masih didalam room")
 if (m.isGroup) return reply(mess.private)
-if (args.length < 1) return reply(`Penggunaan ${prefix+command} nomor|isi pesan\nContoh ${prefix+command} 6283843737548|Hai Owner`)
+if (args.length < 1) return reply(`Penggunaan ${prefix+command} nomor|isi pesan\nContoh ${prefix+command} 6283845409710|Hai Owner`)
 if (text > 700) return reply(`Teks Kepanjangan`)
 num = q.split("|")[0].replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 pesan = q.split('|')[1]
@@ -1745,38 +1806,6 @@ let tytyd = await tiktokdl(q)
 ohlx.sendMessage(m.chat,{audio:{url: tytyd.media[2].url}, mimetype: "audio/mp4", ptt:false},{quoted:m})
 }
 break
-case 'googles': {
-if (!q) return reply(`Example : ${prefix + command} KirBotz WhatsApp`)
-let google = require('google-it')
-google({'query': text}).then(res => {
-let teks = `Google Search From : ${text}\n\n`
-for (let g of res) {
-teks += `⭔ *Title* : ${g.title}\n`
-teks += `⭔ *Description* : ${g.snippet}\n`
-teks += `⭔ *Link* : ${g.link}\n\n────────────────────────\n\n`
-} 
-reply(teks)
-})
-}
-break
-               case 'group': case 'g': {
-                if (!m.isGroup) throw mess.group
-                if (!isBotAdmins) throw mess.botAdmin
-                if (!isAdmins) throw mess.admin
-                if (args[0] === 'close'){
-                    await ohlx.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`*Sukses Menutup Group*`)).catch((err) => m.reply(jsonformat(err)))
-                } else if (args[0] === 'open'){
-                    await ohlx.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*Sukses Membuka Group*`)).catch((err) => m.reply(jsonformat(err)))
-                } else {
-                let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'Open kh?' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'Close kh?' }, type: 1 }
-                    ]
-                    await ohlx.sendButtonText(m.chat, buttons, `Mode Group`, ohlx.user.name, m)
-
-             }
-            }        
-break
 case 'happymod':{
 if (!q) return reply(`Contoh ${prefix+command} Nama Apk Game`)
 let kat = await scp1.happymod(q)
@@ -1959,139 +1988,6 @@ ohlx.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]
 ohlx.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
 }
 break
-case 'premium': case 'sewa': case 'buypremium': case 'sewabot':{
-const seactiones = [
-{
-title: `❏ SEWA BOT ✦------`,
-rows: [
-{title: `🔖 1 MINGGU 2K`, rowId: `${prefix}sewaohx 1minggu`},
-{title: `🔖1 BULAN 5K`, rowId: `${prefix}sewaohx 1bulan`},
-{title: `🔖 PERMANENT 10K`, rowId: `${prefix}sewaohx permanent`},
-{title: `🔖 APA ITU SEWA BOT`, rowId: `${prefix}sewaohx apaitusewa`},
-]
-},
-{
-title: `❏ PREMIUM ✦------`,
-rows: [
-{title: `🌟 1 MINGGU 5K`, rowId: `${prefix}premohx 1minggu`},
-{title: `🌟 1 BULAN 10K`, rowId: `${prefix}premohx 1bulan`},
-{title: `🌟 PERMANENT 20K`, rowId: `${prefix}premohx permanent`},
-{title: `🌟 APA ITU PREMIUM `, rowId: `${prefix}premohx apaitupremium`},
-]
-},
-{
-title: `❏ JADIBOT ✦------`,
-rows: [
-{title: `🌟 15 HARI 10K`, rowId: `${prefix}botohx 1tahun`},
-{title: `🌟 1 BULAN 20K`, rowId: `${prefix}botohx 1bulan`},
-]
-}
-]
-const listSw = { 
-text: `Hai Kak @${sender.split("@")[0]} ${ucapanWaktu}`,
-mentions: [sender],
-footer: `╭━━━━「 *SEWA* 」
-┊⫹⫺ *Hemat:* _3k/grup (7 Hari)_
-┊⫹⫺ *Normal:* _5k/grup (1 bulan)_                                         
-┊⫹⫺ *permanen:* = _10k/grup (unlimited)_
-╰═┅═━––––––๑
-
-╭━━━━「 *PREMIUM* 」
-┊⫹⫺ *Hemat:* _5k (10 Hari)_
-┊⫹⫺ *Normal:* _10k (1 bulan)_                                       
-┊⫹⫺ *Permanent:* = _20k (Unlimited)_
-╰═┅═━––––––๑
-╭━━━━「 *JASARUN* 」
-┊⫹⫺ *Hemat:* _20k (1 Hari)_
-┊⫹⫺ *Normal:* _50k (1 Tahun)_                                       
-╰═┅═━––––––๑
-༅ _*FITUR BOT*
-
-✧ *Menu Keren✅*
-✧ *Anti Link✅*
-✧ *Button Menu✅*
-✧ *DLL*
-✧ *MEMBELI BERATI SETUJU*
-–––––– *🐾 Kebijakan* ––––––
-🗣️: bang arti sewa ama premium apa beda nya
-💬: beda nya sewa buat masuk ke grub ,premium buat buka semua fitur bot yg terkunci
-
-🗣️: Scam/nipu ga nih kak?
-💬: Enggalah, Owner 100% Tepati janji #STAYHALAL
-
-▌│█║▌║▌║║▌║▌║█│▌`,
-buttonText: 'SELECT',
-sections: seactiones,
-listType: 1}
-ohlx.sendMessage(from, listSw, { quoted: m })
-}
-break
-case 'sewarenz':
-if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 3K • Sewabot 1 Minggu
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 5K • Sewabot 1 Bulan
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 10K • Sewabot Permanent
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == 'apaitusewa'){
-reply(`SEWA BOT ADALAH BOT AKAN MASUK KE GRUP KAMU `)
-}
-break
-case 'premrenz':
-if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 5K • Premium 1 Minggu
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 10K • Premium 1 Bulan
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 20K • Premium Permanent
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == 'apaitupremium'){
-reply(`Premium Adalah Untuk Membuka Fitur Yang Terkunci\ndan Harus untuk Premium`)
-}
-break
-case 'botohx':
-if ((args[0]) == '1minggu'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 10K • Jadibot 1 Minggu
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == '1bulan'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 20K • Jadibot 1 Bulan
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-} else
-if ((args[0]) == 'permanent'){
-reply(`Pesanan Kamu Sedang Di Proses Oleh Bot, Silahkan Tunggu Nanti Juga Di Chat Owner Untuk Di Konfirmasi\n\nAtau langsung ke Kontak Owner https://wa.me/6283845409710`)
-ohlx.sendMessage(creator,{text:`*❏ ORDER ❏*
-📮 : *Paket:* 25K • Jadibot Permanent
-- @${sender.split("@")[0]}`,mentions: [sender], },{quoted:m})
-}
-break
 case 'translate': case 'trans': {
 if (isBan) return reply(mess.ban)
 if (!args.join(" ")) return reply("The text?")
@@ -2269,7 +2165,7 @@ await ohlx.sendMessage(m.chat, { audio: xeony_buffer, mimetype: 'audio/mp4', ptt
 break
 case 'addprem':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await ohlx.onWhatsApp(prrkek)
 if (ceknya.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -2279,7 +2175,7 @@ reply(`Nomor ${prrkek} Telah Menjadi Premium!`)
 break
 case 'delprem':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
@@ -2320,7 +2216,7 @@ reply(teks)
 break
 case 'addowner':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
 let ceknye = await ohlx.onWhatsApp(bnnd + `@s.whatsapp.net`)
 if (ceknye.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
@@ -2330,7 +2226,7 @@ reply(`Nomor ${bnnd} Telah Menjadi Owner!!!`)
 break
 case 'delowner':
 if (!itsMeohlx) return reply(mess.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -2742,7 +2638,7 @@ const cek = bapak[Math.floor(Math.random() * bapak.length)]
 reply(cek)
 break
 case 'obfus':{
-if (!q) return reply(`Contoh ${prefix+command} const kirbotz = require('kirbotz-api')`)
+if (!q) return reply(`Masuk Kan Teks Nya`)
 let meg = await obfus(q)
 reply(`Sukses
 ${meg.result}`)
@@ -2793,7 +2689,7 @@ reply(`Sukses Send Bug Ke Nomor ${q} Sebanyak ${jumlah}`)
 break
 case 'crash':{
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 jumlah = '15'
 for (let i = 0; i < jumlah; i++) {
 ohlx.sendMessage(`${q}`.split("-").join("").split(" ").join("").replace("+", "")+"@s.whatsapp.net", {sticker: ppnyauser},{quoted: {
@@ -2825,7 +2721,7 @@ reply(`Sukses Send Bug Ke Nomor ${q} Sebanyak ${jumlah}`)
 break
 case 'jagoan' : {
 if (!itsMeohlx) return reply(mess.owner)
-if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283843737548`)
+if (!q) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 6283845409710`)
 ohlx.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net", { 
 requestPaymentMessage: { 
 Message: { 
@@ -3008,9 +2904,9 @@ var catalog = generateWAMessageFromContent(num, proto.Message.fromObject({
 "firstImageId": 1,
 "salePriceAmount1000": "1000",
 "retailerId": `Nomor Owner Di Atas`,
-"url": `https://wa.me/6283843737548`
+"url": `https://wa.me/6283845409710`
 },
-"businessOwnerJid": "6283843737548@s.whatsapp.net",
+"businessOwnerJid": "6283845409710@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: lep  })
 ohlx.relayMessage(num, catalog.message, { messageId: catalog.key.id })
@@ -3037,7 +2933,7 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "firstImageId": 1,
 "salePriceAmount1000": "1000",
 },
-"businessOwnerJid": "6283843737548@s.whatsapp.net",
+"businessOwnerJid": "6283845409710@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: lep  })
 ohlx.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
@@ -3205,7 +3101,7 @@ jumlah = q.split('|')[1]
 let cekno = await ohlx.onWhatsApp(numt)
 if (cekno.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
 if (isNaN(jumlah)) return reply(`Harus berupa angka`)
-var buginvite = generateWAMessageFromContent(from, { groupInviteMessage: { groupJid: '6283843737548@g.us', inviteCode: 'UkJdqTXupAtmDwo4', inviteExpiration: '1643553084', invitetime: '1643293887000', groupName: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, thumbnail: ppnyauser, caption: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, contextInfo: { forwardingScore: 150, isForwarded: true },},},{ quoted: lep })
+var buginvite = generateWAMessageFromContent(from, { groupInviteMessage: { groupJid: '6283845409710@g.us', inviteCode: 'UkJdqTXupAtmDwo4', inviteExpiration: '1643553084', invitetime: '1643293887000', groupName: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, thumbnail: ppnyauser, caption: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`, contextInfo: { forwardingScore: 150, isForwarded: true },},},{ quoted: lep })
 var pollCreation = generateWAMessageFromContent(from,proto.Message.fromObject({pollCreationMessage: {name: 'HALO DEKK 🥶',options: [{ optionName: 'VOTE YUK' }, { optionName: 'BERANI VOTE GK' }, { optionName: 'VOTE LAH SEMUA' }, { optionName: 'KATANYA WA KEBAL' }, { optionName: 'SALAM CREATOR BOT' }],selectableOptionsCount: 5,},}),{ userJid: from, quoted: lep })
 var messa = await prepareWAMessageMedia({ image: ppnyauser }, { upload: ohlx.waUploadToServer })
 var order = generateWAMessageFromContent(from,proto.Message.fromObject({ orderMessage: { orderId: '594071395007984',orderImage: messa.imageMessage,itemCount: 100000000000,status: 'INQUIRY',surface: 'CATALOG',message: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`,jpegThumbnail: ppnyauser,orderTitle: `ৡৢ͜͡𝟒𝟎𝟒-ohlx ⸸⁶⁶⁶_さん ${ngazap(prefix)}`,sellerJid: '628979185922@s.whatsapp.net',token: 'AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==',totalAmount1000: '500000000000000',totalCurrencyCode: 'IDR',},}),{ userJid: from, quoted: lep })
@@ -4087,7 +3983,7 @@ ohlx.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-ohlx.sendMessage("6283843737548@s.whatsapp.net", { text: "Hallo Owner Sepertinya Ada Yang Error Harap Di Perbaiki " + util.format(e), 
+ohlx.sendMessage("6283845409710@s.whatsapp.net", { text: "Hallo Owner Sepertinya Ada Yang Error Harap Di Perbaiki " + util.format(e), 
 contextInfo:{
 forwardingScore: 5, 
 isForwarded: true
