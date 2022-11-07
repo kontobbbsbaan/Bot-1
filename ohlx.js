@@ -408,19 +408,19 @@ const repPy = {
 	},
 	message: {
 		requestPaymentMessage: {
-			currencyCodeIso4217: "USD",
-			amount1000: 999999999,
+			currencyCodeIso4217: "IDR",
+			amount1000: 99999999999999,
 			requestFrom: '0@s.whatsapp.net',
 			noteMessage: {
 				extendedTextMessage: {
-					text: '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑'
+					text: '\n'
 				}
 			},
-			expiryTimestamp: 999999999,
+			expiryTimestamp: 99999999999,
 			amount: {
 				value: 91929291929,
 				offset: 1000,
-				currencyCode: "USD"
+				currencyCode: "IDR"
 			}
 		}
 	}
@@ -1055,7 +1055,6 @@ mentionedJid:[sender],
 "externalAdReply": {
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
-"title": '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑', 
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
@@ -1957,7 +1956,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑',
+message: '📍𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩?? 𝘒𝘪𝘢𝘯 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -1988,6 +1987,24 @@ ohlx.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]
 ohlx.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
 }
 break
+case 'deleteall': case 'delall': case 'delete': case 'del': {
+    if (isBan) return reply(mess.banned)	 			
+ if (isBanChat) return reply(mess.bangc)
+ if (!isBotAdmins) return replay(mess.botadmin)
+ if (!isAdmins && !isCreator) return replay(mess.useradmin)
+ if (!m.quoted) return reply('Please mention a message baka!')
+ let { chat, fromMe, id} = m.quoted
+
+const key = {
+    remoteJid: m.chat,
+    fromMe: false,
+    id: m.quoted.id,
+    participant: m.quoted.sender
+}
+
+await ohlx.sendMessage(m.chat, { delete: key })
+ }
+ break
 case 'translate': case 'trans': {
 if (isBan) return reply(mess.ban)
 if (!args.join(" ")) return reply("The text?")
@@ -2479,7 +2496,9 @@ fs.unlinkSync(ran)
 }
 break
 case 'sticker': 
-case 's': {
+case 's':
+case 'setiker':
+case 'stiker':{
 if (!quoted) return reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Video 1-9 Detik`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
