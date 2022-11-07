@@ -108,13 +108,13 @@ ppgroup = await ohlx.profilePictureUrl(anu.id, 'image')
 ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 if (anu.action == 'add') {
-ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Hello @${num.split("@")[0]}, Welcome To The Group ${metadata.subject}, I Hope You Enjoy It, Sis`, 
+ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome @${num.split("@")[0]}`, 
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
 "mentionedJid": [num],
 "externalAdReply": {
 "showAdAttribution": true,
-"renderLargerThumbnail": true,
+"renderLargerThumbnail": false,
 "title": `Welcome Kak`, 
 "containsAutoReply": true,
 "mediaType": 1, 
@@ -123,13 +123,13 @@ contextInfo: {
 "sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}})
 } else if (anu.action == 'remove') {
-ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye @${num.split("@")[0]}, I Hope You Feel At Home In Nature`,
+ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye @${num.split("@")[0]}`,
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
 "mentionedJid": [num],
 "externalAdReply": {
 "showAdAttribution": true,
-"renderLargerThumbnail": true,
+"renderLargerThumbnail": false,
 "title": `Good Bye Kak`, 
 "containsAutoReply": true,
 "mediaType": 1, 
