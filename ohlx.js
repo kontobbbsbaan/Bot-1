@@ -193,12 +193,12 @@ fs.writeFileSync('./database/user.json', JSON.stringify(pendaftar, null, 2))
 
 if (isCmd && antiSpam.isFiltered(from) && !m.isGroup) {
 console.log(color('[SPAM]', 'red'), color(wib, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
-return m.reply('「 ❗ 」Kamu terdeteksi spam bot tanpa jeda, ulangi perintah setelah 10 detik')
+return m.reply('SPAM TERDETEKSI SILAHKAN ULANGI PERINTAH SETELAH 10 DETIK')
 }
         
 if (isCmd && antiSpam.isFiltered(from) && m.isGroup) {
 console.log(color('[SPAM]', 'red'), color(wib, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname), 'in', color(groupName))
-return m.reply('「 ❗ 」Kamu terdeteksi spam bot tanpa jeda, ulangi perintah setelah 10 detik')
+return m.reply('SPAM TERDETEKSI SILAHKAN ULANGI PERINTAH SETELAH 10 DETIK')
 }
 
 if (isCmd && !itsMeohlx) antiSpam.addFilter(from)
@@ -862,9 +862,9 @@ messageId: ""
 
 async function replyprem(teks) {
     let buttons = [
-    { buttonId: '.buypremium', buttonText: { displayText: '⬆️ Upgrade Premium' }, type: 1 }
+    { buttonId: '.buypremium', buttonText: { displayText: 'Upgrade Premium' }, type: 1 }
     ]
-    return ohlx.sendButtonText(m.chat, buttons, teks, `Jangan Mau Free Yah :(`, m)
+    return ohlx.sendButtonText(m.chat, buttons, teks, `SEGERA UPGRADE BIAR BISA MEMBUKA FITUR YANG KE KUNCI`, m)
 }
 
 if (/hehe/g.test(m.body)) {
@@ -1059,8 +1059,8 @@ mentionedJid:[sender],
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt',
+"sourceUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt'
 }
 }
 })                   
@@ -1942,8 +1942,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": eek,
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt',
+"sourceUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt'
 }}
 }
 ohlx.sendMessage(m.chat, buttonMessages, { quoted: {
@@ -2340,29 +2340,6 @@ if (fs.existsSync(media)) fs.unlinkSync(media)
 updateResponList(from, args1, args2, false, '-', db_respon_list)
 reply(`Sukses update respon list dengan key *${args1}*`)
 }
-  break
-       case 'attp2': {
-		   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-           if (!text) return reply(`Example : ${prefix + command} text`)
-           await ohlx.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
-
-         }
-         break
-case 'attp': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-           if (!text) reply(`Use ${prefix}attp hello\n*Example : ${prefix + command} ${ownername}*` )
-           await ohlx.sendMedia(m.chat, `https://cililitan.herokuapp.com/api/attp?teks=${text}`, 'Xeon', 'Op', m, {asSticker: true}).catch((err) => reply(mess.error))
-         }
-         break
-case 'ttp': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-           if (!text) return reply(`*Example : ${prefix + command} hello*`)
-           await ohlx.sendMedia(m.chat, `https://cililitan.herokuapp.com/api/texttopng2?teks=${text}`, 'A L Y A', 'B O T M D', m, {asSticker: true})
-         
-                     }      
 break
 case 'snobg': {
 if (!quoted) return reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Video 1-9 Detik`)
@@ -2493,8 +2470,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt',
+"sourceUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt'
 }}
 }, { quoted: m })
 fs.unlinkSync(ran)
@@ -3588,8 +3565,8 @@ contextInfo: {
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": { url: yeha },
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt',
+"sourceUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt'
 }}
 }
 ohlx.sendMessage(m.chat, buttonMessaage, { quoted: m })
