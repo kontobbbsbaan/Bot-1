@@ -107,7 +107,7 @@ ppgroup = await ohlx.profilePictureUrl(anu.id, 'image')
 } catch {
 ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
-if (anu.action == 'add') {
+if (anu.action == 'add.') {
 ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome @${num.split("@")[0]}`, 
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
@@ -122,7 +122,7 @@ contextInfo: {
 "mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
 "sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
 }}})
-} else if (anu.action == 'remove') {
+} else if (anu.action == 'remove.') {
 ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye @${num.split("@")[0]}`,
 jpegThumbnail: await reSize(ppuser, 200, 200), 
 contextInfo: {
