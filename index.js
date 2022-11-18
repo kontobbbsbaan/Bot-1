@@ -114,13 +114,13 @@ contextInfo: {
 "mentionedJid": [num],
 "externalAdReply": {
 "showAdAttribution": true,
-"renderLargerThumbnail": false,
+"renderLargerThumbnail": true,
 "title": `Welcome Kak`, 
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": await reSize(ppuser, 200, 200),
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'http://wa.me/6283843737548?text=.menu',
+"sourceUrl": 'http://wa.me/6283843737548?text=.menu'
 }}})
 } else if (anu.action == 'remove') {
 ohlx.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Goodbye @${num.split("@")[0]}`,
@@ -129,13 +129,13 @@ contextInfo: {
 "mentionedJid": [num],
 "externalAdReply": {
 "showAdAttribution": true,
-"renderLargerThumbnail": false,
+"renderLargerThumbnail": true,
 "title": `Good Bye Kak`, 
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": await reSize(ppuser, 200, 200),
-"mediaUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar',
-"sourceUrl": 'https://chat.whatsapp.com/DFv1xuDYE39AAo5bBoimar'
+"mediaUrl": 'http://wa.me/6283843737548?text=.menu',
+"sourceUrl": 'http://wa.me/6283843737548?text=.menu'
 }}})
 }
 }
