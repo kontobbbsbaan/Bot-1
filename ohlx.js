@@ -903,14 +903,13 @@ await fs.unlinkSync(encmedia)
 if (m.isGroup && !m.key.fromMe && !itsMeohlx && antilink) {
 if (!isBotAdmins) return
         if (budy.match(`chat.whatsapp.com`)) {
-        m.reply(`「 *ANTI LINK* 」\n\n*Kamu terdeteksi mengirim link group*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
-        if (!isBotAdmins) return m.reply(`*Bot aja bukan admin anj*`)
+        if (!isBotAdmins)
         let gclink = (`https://chat.whatsapp.com/`+await ohlx.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return m.reply(`*maaf gak jadi, karena kamu ngirim link group ini*`)
-        if (isAdmins) return m.reply(`*Ouh Admin kirain Member*`)
-        if (itsMeohlx) return m.reply(`*Maaf Owner ku😁*`)
+        if (isgclink)
+        if (isAdmins)
+        if (itsMeohlx)
         ohlx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -1583,8 +1582,8 @@ mentionedJid:[sender],
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": 'https://saweria.co/Kianganz',
-"sourceUrl": 'https://saweria.co/Kianganz'
+"mediaUrl": '',
+"sourceUrl": ''
 }
 }
 })                   
