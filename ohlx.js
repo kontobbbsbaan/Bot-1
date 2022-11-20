@@ -903,13 +903,13 @@ await fs.unlinkSync(encmedia)
 if (m.isGroup && !m.key.fromMe && !itsMeohlx && antilink) {
 if (!isBotAdmins) return
         if (budy.match(`chat.whatsapp.com`)) {
-        m.reply(`terdeteksi ${sender.split("@")[0]} telah mengirim link grub`)
+        m.reply(`terdeteksi @${sender.split("@")[0]} telah mengirim link grub kamu akan di kick`)
         if (!isBotAdmins) return m.reply(`maaf bot tidak admin`)
         let gclink = (`https://chat.whatsapp.com/`+await ohlx.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return m.reply(`${sender.split("@")[0]} kamu tidak jadi dikick karena telah menggirim link grub ini`)
-        if (isAdmins) return m.reply(`${sender.split("@")[0]} ternyata admin`)
+        if (isgclink) return m.reply(`maaf @${sender.split("@")[0]} kamu tidak jadi di kick karena telah menggirim link grub ini`)
+        if (isAdmins) return m.reply(`maaf @${sender.split("@")[0]} ternyata admin`)
         if (itsMeohlx) return m.reply(`*Maaf Owner ku😁*`)
         ohlx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
@@ -1046,6 +1046,11 @@ let result = args[0].split('https://chat.whatsapp.com/')[1]
 await ohlx.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 }
 break
+case 'listmenu':
+case '?':
+case 'allmenu':
+case 'list':
+case 'help':
 case 'menu':
 sendohlxMessage(from, { 
 text: `
@@ -1626,7 +1631,7 @@ text: `╭━━━━「 𝗦𝗘𝗪𝗔 」
 ➥ 𝗺𝗲𝗻𝘂 𝗸𝗲𝗿𝗲𝗻
 ➥ 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸,𝗮𝗻𝘁𝗶𝘄𝗮𝗺??,𝗮𝗻𝘁𝗶𝘁𝗼𝘅𝗶𝗰
 ➥ 𝗯𝘂𝘁𝘁𝗼𝗻 𝗺𝗲𝗻𝘂
-➥ 𝗮𝗻𝘁𝗶 𝗲𝗿𝗿𝗼𝗿 𝟭𝟬𝟬%
+➥ 𝗮𝗻𝘁𝗶 𝗲𝗿𝗿𝗼𝗿 ??𝟬𝟬%
 ➥ 𝘃𝗶𝗿𝘁𝗲𝘅,𝗯𝘂𝗴𝗺𝗲𝗻𝘂,𝘄𝗮𝗿
 ➥ 𝗷𝗮𝗱𝗶 𝗯𝗼𝘁
 ➥ 𝗷𝗮𝗱𝗶 𝗼𝘄𝗻𝗲𝗿
