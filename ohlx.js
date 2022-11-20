@@ -903,13 +903,14 @@ await fs.unlinkSync(encmedia)
 if (m.isGroup && !m.key.fromMe && !itsMeohlx && antilink) {
 if (!isBotAdmins) return
         if (budy.match(`chat.whatsapp.com`)) {
-        if (!isBotAdmins)
+        m.reply(`terdeteksi ${sender.split("@")[0]} telah mengirim link grub`)
+        if (!isBotAdmins) return m.reply(`maaf bot tidak admin`)
         let gclink = (`https://chat.whatsapp.com/`+await ohlx.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink)
-        if (isAdmins)
-        if (itsMeohlx)
+        if (isgclink) return m.reply(`${sender.split("@")[0]} kamu tidak jadi dikick karena telah menggirim link grub ini`)
+        if (isAdmins) return m.reply(`${sender.split("@")[0]} ternyata admin`)
+        if (itsMeohlx) return m.reply(`*Maaf Owner ku😁*`)
         ohlx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -1061,8 +1062,7 @@ text: `
 ├Jumlah User : ${pendaftar.length} User
 ├Runtime Bot : ${runtime(process.uptime())}
 ├Speed Bot : ${latensi.toFixed(4)} detik
-├Grub Bot :
-├ https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt
+├Grub Bot : https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt
 ├Donasi : https://saweria.co/Kianganz
 ╰──ঞ
 
@@ -1582,8 +1582,8 @@ mentionedJid:[sender],
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": ppnyauser,
-"mediaUrl": '',
-"sourceUrl": ''
+"mediaUrl": 'kian',
+"sourceUrl": 'kian'
 }
 }
 })                   
@@ -1624,7 +1624,7 @@ text: `╭━━━━「 𝗦𝗘𝗪𝗔 」
 𝗙𝗜𝗧𝗨𝗥 𝗕𝗢𝗧 
 
 ➥ 𝗺𝗲𝗻𝘂 𝗸𝗲𝗿𝗲𝗻
-➥ 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸,𝗮𝗻𝘁𝗶𝘄𝗮𝗺𝗲,𝗮𝗻𝘁𝗶𝘁𝗼𝘅𝗶𝗰
+➥ 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸,𝗮𝗻𝘁𝗶𝘄𝗮𝗺??,𝗮𝗻𝘁𝗶𝘁𝗼𝘅𝗶𝗰
 ➥ 𝗯𝘂𝘁𝘁𝗼𝗻 𝗺𝗲𝗻𝘂
 ➥ 𝗮𝗻𝘁𝗶 𝗲𝗿𝗿𝗼𝗿 𝟭𝟬𝟬%
 ➥ 𝘃𝗶𝗿𝘁𝗲𝘅,𝗯𝘂𝗴𝗺𝗲𝗻𝘂,𝘄𝗮𝗿
